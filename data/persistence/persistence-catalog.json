@@ -4,31 +4,31 @@
   "namespace": "se.persistence",
   "artifact": "persistence-catalog",
   "reference_paths": [
-    "C:/Users/edaci/Documents/structural-explainability/theory/se-theory-persistence/reference/persistence-types.toml",
-    "C:/Users/edaci/Documents/structural-explainability/theory/se-theory-persistence/reference/persistence-vocabulary.toml",
-    "C:/Users/edaci/Documents/structural-explainability/theory/se-theory-persistence/reference/persistence-predicates.toml",
-    "C:/Users/edaci/Documents/structural-explainability/theory/se-theory-persistence/reference/persistence-theorems.toml"
+    "reference/persistence-types.toml",
+    "reference/persistence-vocabulary.toml",
+    "reference/persistence-predicates.toml",
+    "reference/persistence-theorems.toml"
   ],
   "reference_artifacts": [
     {
       "id": "type",
       "kind": "type",
-      "path": "C:/Users/edaci/Documents/structural-explainability/theory/se-theory-persistence/reference/persistence-types.toml"
+      "path": "reference/persistence-types.toml"
     },
     {
       "id": "vocabulary",
       "kind": "vocabulary",
-      "path": "C:/Users/edaci/Documents/structural-explainability/theory/se-theory-persistence/reference/persistence-vocabulary.toml"
+      "path": "reference/persistence-vocabulary.toml"
     },
     {
       "id": "predicate",
       "kind": "predicate",
-      "path": "C:/Users/edaci/Documents/structural-explainability/theory/se-theory-persistence/reference/persistence-predicates.toml"
+      "path": "reference/persistence-predicates.toml"
     },
     {
       "id": "theorem",
       "kind": "theorem",
-      "path": "C:/Users/edaci/Documents/structural-explainability/theory/se-theory-persistence/reference/persistence-theorems.toml"
+      "path": "reference/persistence-theorems.toml"
     }
   ]
 }

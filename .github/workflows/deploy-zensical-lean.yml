@@ -155,7 +155,8 @@ jobs:
       - name: BB2) Build Lean API documentation for this module
         working-directory: docbuild
         run: |
-          lake update
+          MATHLIB_NO_CACHE_ON_UPDATE=1 lake update doc-gen4
+          lake update se-theory-persistence
           lake build SE.Persistence:docs
 
       - name: BB3) Verify Lean API output
