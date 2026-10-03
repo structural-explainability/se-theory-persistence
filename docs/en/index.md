@@ -6,6 +6,9 @@ Explainability.
 This repository defines identity survival, breakage, invariance, and
 equivalence under transformation.
 
+- [Lean API Reference](https://structural-explainability.github.io/se-theory-persistence/lean/)
+- [GitHub Repository](https://github.com/structural-explainability/se-theory-persistence)
+
 ## Persistence
 
 ```text
@@ -43,12 +46,12 @@ This repository covers:
 
 This repository owns:
 
-- Lean definitions under `SE.Persistence/`
-- the public Lean import surface for persistence theory
+- the public import surface `SE/Persistence.lean`
+- the repository-level aggregator `SE.lean`
 - reference artifacts under `reference/`
 - generated persistence artifacts under `data/persistence/`
 
-## Does not own
+## Out of Scope
 
 This repository does not own:
 
