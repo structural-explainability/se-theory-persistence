@@ -1,0 +1,61 @@
+# ============================================================
+# Persistence Vocabulary
+# se-theory-persistence
+# ============================================================
+# Public Lean definitions that are not Prop-valued: the coarse matrix, the free dynamics, taxonomy lifts, and the canonical finite registry.
+
+schema = "se-vocabulary-registry-1"
+kind = "vocabulary"
+repo = "se-theory-persistence"
+surface_module = "SE.Persistence"
+namespace = "SE.Persistence"
+
+[vocabulary.Coarse]
+order = 1
+id = "Coarse"
+cite_id = "PS.DEF.COARSE"
+name = "Coarse"
+lean_symbol = "SE.Persistence.Classification.coarse"
+lean_kind = "def"
+source_module = "SE.Persistence.Domain.Classification"
+description = "The total three-valued matrix obtained by sending inapplicable to ign. This forgets applicability. coarse_eq_prs_iff shows it preserves the preserving set."
+
+[vocabulary.LiftFamily]
+order = 2
+id = "LiftFamily"
+cite_id = "PS.DEF.LIFT_FAMILY"
+name = "Lift family"
+lean_symbol = "SE.Persistence.Classification.liftFamily"
+lean_kind = "def"
+source_module = "SE.Persistence.Reference.Lift"
+description = "The operator-level classification induced by a family-level one."
+
+[vocabulary.LiftKind]
+order = 3
+id = "LiftKind"
+cite_id = "PS.DEF.LIFT_KIND"
+name = "Lift kind"
+lean_symbol = "SE.Persistence.Classification.liftKind"
+lean_kind = "def"
+source_module = "SE.Persistence.Reference.Lift"
+description = "The operator-level classification induced by a kind-level one."
+
+[vocabulary.ReferenceClassificationValues]
+order = 4
+id = "ReferenceClassificationValues"
+cite_id = "PS.DEF.REFERENCE_CLASSIFICATION_VALUES"
+name = "Reference classification values"
+lean_symbol = "SE.Persistence.referenceClassificationValues"
+lean_kind = "def"
+source_module = "SE.Persistence.Registry"
+description = "All classification values in canonical reference order."
+
+[vocabulary.FreeDynamics]
+order = 5
+id = "FreeDynamics"
+cite_id = "PS.DEF.FREE_DYNAMICS"
+name = "Free dynamics"
+lean_symbol = "SE.Persistence.freeDynamics"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Generated"
+description = "The free dynamics: each transformation t relates one private pair of states, (t, false) to (t, true), and nothing else."

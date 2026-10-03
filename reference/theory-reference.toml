@@ -1,0 +1,72 @@
+# ============================================================
+# reference/theory-reference.toml
+# ============================================================
+# Theory reference configuration for se-theory-reference-kit.
+#
+# The theory repository owns Lean source, reference TOML, and
+# generated JSON artifacts. The reusable reference kit owns the
+# generic validation, export, catalog, scaffold, and inspection
+# machinery.
+
+schema = "se-theory-reference"
+schema_version = "0.1.0"
+
+# === Repository Identity ===
+
+[repository]
+organization = "structural-explainability"
+name = "se-theory-persistence"
+theory = "persistence"
+description = "Persistence theory repository for Structural Explainability."
+
+# === Lean Public Surface ===
+
+[lean]
+root_module = "SE"
+
+public_modules = [
+    "SE",
+    "SE.Persistence",
+    "SE.Persistence.Conformance",
+    "SE.Persistence.Core",
+    "SE.Persistence.Domain.Classification",
+    "SE.Persistence.Domain.ClassificationValue",
+    "SE.Persistence.Reference.Lift",
+    "SE.Persistence.Registry",
+    "SE.Persistence.Relation.Breakage",
+    "SE.Persistence.Relation.Equivalence",
+    "SE.Persistence.Relation.Generated",
+    "SE.Persistence.Relation.Invariance",
+    "SE.Persistence.Relation.NonCollapse",
+    "SE.Persistence.Relation.Survival",
+    "SE.Persistence.Spec",
+]
+
+test_modules = ["SETest"]
+
+# === Reference Artifacts ===
+
+[reference]
+root = "reference"
+
+# === Exported Machine Artifacts ===
+
+[export]
+root = "data/persistence"
+
+# === Reference-Kind Mapping ===
+#
+# Generic Lean-surface kinds register public theory concepts.
+# Persistence has no finite domain catalog of its own, so there are
+# no domain catalog kinds; only the generated catalog is exported.
+
+[surface_kinds]
+type = "reference/persistence-types.toml"
+vocabulary = "reference/persistence-vocabulary.toml"
+predicate = "reference/persistence-predicates.toml"
+theorem = "reference/persistence-theorems.toml"
+
+# === Export Mapping ===
+
+[export_map]
+catalog = "data/persistence/persistence-catalog.json"

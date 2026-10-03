@@ -1,0 +1,203 @@
+# ============================================================
+# Persistence Theorems
+# se-theory-persistence
+# ============================================================
+# Public semantic theorems for the Persistence theory.
+#
+# Finite regression guards in SE.Persistence.Conformance are intentionally not registered here.
+
+schema = "se-theorem-registry-1"
+kind = "theorem"
+repo = "se-theory-persistence"
+surface_module = "SE.Persistence"
+namespace = "SE.Persistence"
+
+[theorem.ApplicableIff]
+order = 1
+id = "ApplicableIff"
+cite_id = "PS.THM.APPLICABLE_IFF"
+name = "Applicable iff"
+lean_symbol = "SE.Persistence.Classification.applicable_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Domain.Classification"
+description = "Applicable means some classification exists."
+
+[theorem.NotIsPrsOfIsBrk]
+order = 2
+id = "NotIsPrsOfIsBrk"
+cite_id = "PS.THM.NOT_IS_PRS_OF_IS_BRK"
+name = "Not is prs of is brk"
+lean_symbol = "SE.Persistence.Classification.not_isPrs_of_isBrk"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Domain.Classification"
+description = "A transformation is not both preserving and breaking."
+
+[theorem.CoarseEqPrsIff]
+order = 3
+id = "CoarseEqPrsIff"
+cite_id = "PS.THM.COARSE_EQ_PRS_IFF"
+name = "Coarse eq prs iff"
+lean_symbol = "SE.Persistence.Classification.coarse_eq_prs_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Domain.Classification"
+description = "The coarse matrix preserves exactly the preserving set."
+
+[theorem.LiftFamilyPatternEq]
+order = 4
+id = "LiftFamilyPatternEq"
+cite_id = "PS.THM.LIFT_FAMILY_PATTERN_EQ"
+name = "Lift family pattern eq"
+lean_symbol = "SE.Persistence.Classification.liftFamily_pattern_eq"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Reference.Lift"
+description = "Operators in the same family have the same pattern under a lifted classification."
+
+[theorem.LiftKindPatternEq]
+order = 5
+id = "LiftKindPatternEq"
+cite_id = "PS.THM.LIFT_KIND_PATTERN_EQ"
+name = "Lift kind pattern eq"
+lean_symbol = "SE.Persistence.Classification.liftKind_pattern_eq"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Reference.Lift"
+description = "Operators of the same kind have the same pattern under a lifted classification."
+
+[theorem.NotIdentityRelOfStepBrkFree]
+order = 6
+id = "NotIdentityRelOfStepBrkFree"
+cite_id = "PS.THM.NOT_IDENTITY_REL_OF_STEP_BRK_FREE"
+name = "Not identity rel of step brk free"
+lean_symbol = "SE.Persistence.Classification.not_identityRel_of_stepBrk_free"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Breakage"
+description = "On the free dynamics, a breaking step separates its endpoints."
+
+[theorem.IdentityRelEquivalence]
+order = 7
+id = "IdentityRelEquivalence"
+cite_id = "PS.THM.IDENTITY_REL_EQUIVALENCE"
+name = "Identity rel equivalence"
+lean_symbol = "SE.Persistence.Classification.identityRel_equivalence"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Equivalence"
+description = "~_P is an equivalence relation."
+
+[theorem.SurvivesIdentityRel]
+order = 8
+id = "SurvivesIdentityRel"
+cite_id = "PS.THM.SURVIVES_IDENTITY_REL"
+name = "Survives identity rel"
+lean_symbol = "SE.Persistence.Classification.survives_identityRel"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Equivalence"
+description = "Survival implies identity."
+
+[theorem.IdentityRelMono]
+order = 9
+id = "IdentityRelMono"
+cite_id = "PS.THM.IDENTITY_REL_MONO"
+name = "Identity rel mono"
+lean_symbol = "SE.Persistence.Classification.identityRel_mono"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Equivalence"
+description = "A larger preserving set generates a larger identity relation."
+
+[theorem.IdentityRelEqOfPrsIff]
+order = 10
+id = "IdentityRelEqOfPrsIff"
+cite_id = "PS.THM.IDENTITY_REL_EQ_OF_PRS_IFF"
+name = "Identity rel eq of prs iff"
+lean_symbol = "SE.Persistence.Classification.identityRel_eq_of_prs_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Equivalence"
+description = "Equal preserving sets give equal identity relations on every dynamics."
+
+[theorem.IdentityRelEqOfCoarseEq]
+order = 11
+id = "IdentityRelEqOfCoarseEq"
+cite_id = "PS.THM.IDENTITY_REL_EQ_OF_COARSE_EQ"
+name = "Identity rel eq of coarse eq"
+lean_symbol = "SE.Persistence.Classification.identityRel_eq_of_coarse_eq"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Equivalence"
+description = "Classifications with the same coarse matrix have the same identity relation on every dynamics. Forgetting applicability does not change ~_P."
+
+[theorem.IdentityRelFreeIff]
+order = 12
+id = "IdentityRelFreeIff"
+cite_id = "PS.THM.IDENTITY_REL_FREE_IFF"
+name = "Identity rel free iff"
+lean_symbol = "SE.Persistence.Classification.identityRel_free_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Equivalence"
+description = "On the free dynamics, ~_P relates a transformation's private pair exactly when the transformation preserves."
+
+[theorem.InvariantIffRespectsIdentityRel]
+order = 13
+id = "InvariantIffRespectsIdentityRel"
+cite_id = "PS.THM.INVARIANT_IFF_RESPECTS_IDENTITY_REL"
+name = "Invariant iff respects identity rel"
+lean_symbol = "SE.Persistence.Classification.invariant_iff_respects_identityRel"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "Invariance under preserving steps is respect for ~_P."
+
+[theorem.InvariantOfPrsSubset]
+order = 14
+id = "InvariantOfPrsSubset"
+cite_id = "PS.THM.INVARIANT_OF_PRS_SUBSET"
+name = "Invariant of prs subset"
+lean_symbol = "SE.Persistence.Classification.invariant_of_prs_subset"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "A classification that preserves fewer transformations has more invariants."
+
+[theorem.PrsDifferenceOfNonCollapsing]
+order = 15
+id = "PrsDifferenceOfNonCollapsing"
+cite_id = "PS.THM.PRS_DIFFERENCE_OF_NON_COLLAPSING"
+name = "Prs difference of non collapsing"
+lean_symbol = "SE.Persistence.Classification.prs_difference_of_nonCollapsing"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.NonCollapse"
+description = "Non-collapse on any dynamics forces a preserving-set difference."
+
+[theorem.NonCollapsingFreeIff]
+order = 16
+id = "NonCollapsingFreeIff"
+cite_id = "PS.THM.NON_COLLAPSING_FREE_IFF"
+name = "Non collapsing free iff"
+lean_symbol = "SE.Persistence.Classification.nonCollapsing_free_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.NonCollapse"
+description = "On the free dynamics, two classifications are non-collapsing exactly when their preserving sets differ."
+
+[theorem.SurvivesNeIdentityRelFree]
+order = 17
+id = "SurvivesNeIdentityRelFree"
+cite_id = "PS.THM.SURVIVES_NE_IDENTITY_REL_FREE"
+name = "Survives ne identity rel free"
+lean_symbol = "SE.Persistence.Classification.survives_ne_identityRel_free"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.NonCollapse"
+description = "Survival is strictly weaker than the identity relation: for a preserving transformation, its private pair survives forward, does not survive backward, and is identity-related backward."
+
+[theorem.StepBrkNotSeparating]
+order = 18
+id = "StepBrkNotSeparating"
+cite_id = "PS.THM.STEP_BRK_NOT_SEPARATING"
+name = "Step brk not separating"
+lean_symbol = "SE.Persistence.Classification.stepBrk_not_separating"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.NonCollapse"
+description = "Breakage does not separate in general: some classification and dynamics have a breaking step between states that are also identity-related."
+
+[theorem.SurvivesMono]
+order = 19
+id = "SurvivesMono"
+cite_id = "PS.THM.SURVIVES_MONO"
+name = "Survives mono"
+lean_symbol = "SE.Persistence.Classification.survives_mono"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Survival"
+description = "Preserving more transformations survives more."

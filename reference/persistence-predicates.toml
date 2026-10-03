@@ -1,0 +1,111 @@
+# ============================================================
+# Persistence Predicates
+# se-theory-persistence
+# ============================================================
+# Public Prop-valued definitions: classification predicates and the relations induced by preserving and breaking steps.
+
+schema = "se-predicate-registry-1"
+kind = "predicate"
+repo = "se-theory-persistence"
+surface_module = "SE.Persistence"
+namespace = "SE.Persistence"
+
+[predicate.Applicable]
+order = 1
+id = "Applicable"
+cite_id = "PS.DEF.APPLICABLE"
+name = "Applicable"
+lean_symbol = "SE.Persistence.Classification.Applicable"
+lean_kind = "def"
+source_module = "SE.Persistence.Domain.Classification"
+description = "t is applicable under c."
+
+[predicate.IsPrs]
+order = 2
+id = "IsPrs"
+cite_id = "PS.DEF.IS_PRS"
+name = "Is prs"
+lean_symbol = "SE.Persistence.Classification.IsPrs"
+lean_kind = "def"
+source_module = "SE.Persistence.Domain.Classification"
+description = "t is applicable and identity-preserving under c."
+
+[predicate.IsBrk]
+order = 3
+id = "IsBrk"
+cite_id = "PS.DEF.IS_BRK"
+name = "Is brk"
+lean_symbol = "SE.Persistence.Classification.IsBrk"
+lean_kind = "def"
+source_module = "SE.Persistence.Domain.Classification"
+description = "t is applicable and identity-breaking under c."
+
+[predicate.WellFormed]
+order = 4
+id = "WellFormed"
+cite_id = "PS.DEF.WELL_FORMED"
+name = "Well formed"
+lean_symbol = "SE.Persistence.Classification.WellFormed"
+lean_kind = "def"
+source_module = "SE.Persistence.Domain.Classification"
+description = "The declared persistence set contains only identity-preserving transformations."
+
+[predicate.StepBrk]
+order = 5
+id = "StepBrk"
+cite_id = "PS.DEF.STEP_BRK"
+name = "Step brk"
+lean_symbol = "SE.Persistence.Classification.stepBrk"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Breakage"
+description = "One step of a breaking transformation of c."
+
+[predicate.IdentityRel]
+order = 6
+id = "IdentityRel"
+cite_id = "PS.DEF.IDENTITY_REL"
+name = "Identity rel"
+lean_symbol = "SE.Persistence.Classification.identityRel"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Equivalence"
+description = "The identity relation ~_P."
+
+[predicate.Invariant]
+order = 7
+id = "Invariant"
+cite_id = "PS.DEF.INVARIANT"
+name = "Invariant"
+lean_symbol = "SE.Persistence.Classification.Invariant"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "φ is unchanged by every preserving step of c on d."
+
+[predicate.NonCollapsing]
+order = 8
+id = "NonCollapsing"
+cite_id = "PS.DEF.NON_COLLAPSING"
+name = "Non collapsing"
+lean_symbol = "SE.Persistence.Classification.NonCollapsing"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.NonCollapse"
+description = "The classifications generate different identity relations on d."
+
+[predicate.StepRel]
+order = 9
+id = "StepRel"
+cite_id = "PS.DEF.STEP_REL"
+name = "Step rel"
+lean_symbol = "SE.Persistence.Classification.stepRel"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Survival"
+description = "One step of a preserving transformation of c."
+
+[predicate.Survives]
+order = 10
+id = "Survives"
+cite_id = "PS.DEF.SURVIVES"
+name = "Survives"
+lean_symbol = "SE.Persistence.Classification.Survives"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Survival"
+description = "Identity survives from x to y: a finite chain of preserving steps."

@@ -1,0 +1,47 @@
+# ============================================================
+# CITATION.cff (How to cite this project)
+# ============================================================
+# REQ.UNIVERSAL: Professional open projects SHOULD include this file.
+# May reference upstream dependencies, but must not refer to downstream.
+# USAGE: See https://citation-file-format.github.io/ for details.
+# check with:
+# uvx cffconvert --validate
+
+cff-version: "1.2.0"
+message: "If you use this work, please cite it using the metadata in CITATION.cff."
+type: software
+
+title: "SE Theory: Persistence"
+version: "0.1.0"
+date-released: "2026-10-03"
+
+authors:
+  - family-names: Case
+    given-names: Denise M.
+    orcid: "https://orcid.org/0000-0001-6165-7389"
+    affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
+
+repository-code: "https://github.com/structural-explainability/se-theory-persistence"
+url: "https://github.com/structural-explainability/se-theory-persistence"
+
+license: MIT
+
+abstract: >
+  Lean 4 formalization of foundational persistence theory for
+  Structural Explainability. This repository defines identity survival,
+  breakage, invariance, equivalence, and their relationships under
+  transformation. It builds on Structural Explainability Transformation
+  Theory.
+
+keywords:
+  - structural-explainability
+  - persistence-theory
+  - identity-persistence
+  - identity-survival
+  - identity-breakage
+  - persistence-invariance
+  - persistence-equivalence
+  - transformation
+  - lean4
+  - theorem-proving
+  - formal-verification
