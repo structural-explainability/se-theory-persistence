@@ -123,6 +123,11 @@ lake build
 lake test
 lake lint
 
+# check docs
+# cd docbuild
+# lake build SE.Persistence:docs
+# cd ..
+
 # Generate JSON artifacts and catalog from reference TOML.
 uv run se-theory-reference inspect
 uv run se-theory-reference export

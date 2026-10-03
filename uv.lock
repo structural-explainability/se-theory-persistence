@@ -306,11 +306,11 @@ docs = [
 
 [[package]]
 name = "se-theory-reference-kit"
-version = "0.3.1"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/76/33/6e76b4b6ed25fd99c824376d2a036a0723a80d2ee6fdbb9a7662196b7c11/se_theory_reference_kit-0.3.1.tar.gz", hash = "sha256:9bff4a7d1f096781b859c8151190aac5894ee610524a6d87f3a8ea0f6309743d", size = 95987, upload-time = "2026-07-29T22:39:25.269Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/28/e8/f3b49af8596f44f6bef8e2166aead3bb748ada9a16274cc9dd8a5dc390dc/se_theory_reference_kit-0.4.0.tar.gz", hash = "sha256:436c737d3881e53773b70b359cb62c8ced36e6f4a83da562b6cc433070aaf5dd", size = 103547, upload-time = "2026-10-03T13:20:29.024Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/de/81/2f16dffb9ebf83806c2d48ba8e06ca9442d07af81de2508a9032cadf6509/se_theory_reference_kit-0.3.1-py3-none-any.whl", hash = "sha256:e266a5a45ed1c0d93e7ff28b35aa4aa59261dc6d4fc09db46b5ef97c38076201", size = 44380, upload-time = "2026-07-29T22:39:24.004Z" },
+    { url = "https://files.pythonhosted.org/packages/9f/dc/f04abf75eb957ee019debd7aa5d29879cbfe7e2706d052e24830a9c8f68a/se_theory_reference_kit-0.4.0-py3-none-any.whl", hash = "sha256:cdf95bf155b656de45f1bd92d5c486181983620f06451d2b4e66c8955541fcfc", size = 44421, upload-time = "2026-10-03T13:20:27.597Z" },
 ]
 
 [[package]]
