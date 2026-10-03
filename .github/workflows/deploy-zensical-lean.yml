@@ -157,6 +157,28 @@ jobs:
         run: |
           MATHLIB_NO_CACHE_ON_UPDATE=1 lake update doc-gen4
           lake update se-theory-persistence
+
+          # Build first so the .olean files exist.
+          lake build SE.Persistence
+
+          # Lean resolves an import by the first search-path entry that has a
+          # directory named after the module's first component. Persistence and
+          # Transformation both live under SE/, so expose each package's SE
+          # tree inside the other's lib dir before doc-gen4 runs.
+          PERS_LIB="$GITHUB_WORKSPACE/.lake/build/lib/lean"
+          TRANS_LIB="$GITHUB_WORKSPACE/.lake/packages/se-theory-transformation/.lake/build/lib/lean"
+          merge_se() {
+            src="$1"; dst="$2"
+            mkdir -p "$dst/SE"
+            for f in "$src"/SE/* "$src"/SE.*; do
+              [ -e "$f" ] || continue
+              rel="${f#"$src"/}"
+              [ -e "$dst/$rel" ] || [ -L "$dst/$rel" ] || ln -s "$f" "$dst/$rel"
+            done
+          }
+          merge_se "$PERS_LIB" "$TRANS_LIB"
+          merge_se "$TRANS_LIB" "$PERS_LIB"
+
           lake build SE.Persistence:docs
 
       - name: BB3) Verify Lean API output
