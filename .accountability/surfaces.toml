@@ -46,11 +46,7 @@ ai_max_authority = "prohibited"
 
 id = "lean-public-surface"
 object_kind = "directory"
-paths = [
-"*.lean",
-"SETheory*/**/*.lean",
-"TestAll.lean",
-]
+paths = ["*.lean", "SE*/**/*.lean", "SETest.lean", "SELint.lean"]
 description = "Lean public theory surface, theorem development, module structure, and test entry points."
 
 [[surface.role]]
@@ -74,11 +70,7 @@ ai_max_authority = "drafting"
 [[surface]]
 id = "lean-build-configuration"
 object_kind = "file"
-paths = [
-"lakefile.lean",
-"lean-toolchain",
-"lake-manifest.json",
-]
+paths = ["lakefile.lean", "lean-toolchain", "lake-manifest.json"]
 description = "Lean build, dependency, toolchain, and package configuration."
 
 [[surface.role]]
@@ -96,10 +88,7 @@ ai_max_authority = "drafting"
 [[surface]]
 id = "python-project-configuration"
 object_kind = "file"
-paths = [
-"pyproject.toml",
-"uv.lock",
-]
+paths = ["pyproject.toml", "uv.lock"]
 description = "Python project identity, version contract, dependency boundary, tool configuration, and command exposure."
 
 [[surface.role]]
@@ -129,12 +118,7 @@ ai_max_authority = "drafting"
 [[surface]]
 id = "theory-reference-artifacts"
 object_kind = "directory"
-paths = [
-"reference/**/*.toml",
-"data/reference/**/*.toml",
-"data/contract/**/*.json",
-"data/catalog/**/*.json",
-]
+paths = ["reference/**/*.toml", "data/**"]
 description = "Reference TOML, generated contracts, catalogs, and machine-readable theory artifacts."
 
 [[surface.role]]
@@ -158,10 +142,7 @@ ai_max_authority = "drafting"
 [[surface]]
 id = "reference-kit-command-boundary"
 object_kind = "command"
-paths = [
-"README.md",
-"docs/**",
-]
+paths = ["README.md", "docs/**"]
 description = "Documented use of se-theory-reference-kit commands and validation workflow."
 
 [[surface.role]]
@@ -180,9 +161,9 @@ ai_max_authority = "drafting"
 id = "repository-automation"
 object_kind = "directory"
 paths = [
-".github/workflows/**",
-".github/dependabot.yml",
-".pre-commit-config.yaml",
+    ".github/workflows/**",
+    ".github/dependabot.yml",
+    ".pre-commit-config.yaml",
 ]
 description = "Repository automation, CI, security, and validation workflow authority."
 
@@ -201,15 +182,7 @@ ai_max_authority = "advisory"
 [[surface]]
 id = "repository-governance"
 object_kind = "directory"
-paths = [
-".accountability/**",
-"AI_USE.md",
-"AGENTS.md",
-"SECURITY.md",
-"CONTRIBUTING.md",
-"DECISIONS.md",
-"README.md",
-]
+paths = [".accountability/**", "AI_USE.md", "README.md"]
 description = "Repository governance, AI-use, security, contribution, and decision records."
 
 [[surface.role]]
@@ -226,14 +199,11 @@ ai_max_authority = "advisory"
 
 [verification]
 commands = [
-"elan self update",
-"lake update",
-"uv sync --extra dev --extra docs --upgrade",
-"uvx pre-commit run --all-files",
-"lake build",
-"lake build TestAll",
-"uv run se-theory-reference validate",
-"uv run se-theory-reference validate --strict",
-"uv run se-theory-reference export --check",
-"uv run se-theory-reference catalog --check",
+    "lake build",
+    "lake test",
+    "lake lint",
+    "uv run se-theory-reference export --check",
+    "uv run se-theory-reference catalog --check",
+    "uv run se-theory-reference validate",
+    "uv run se-theory-reference validate --strict",
 ]

@@ -122,7 +122,7 @@ jobs:
         #      configures a different output directory.
 
       # ============================================================
-      # BB) BUILD LEAN API DOCUMENTATION
+      # BB) BUILD LEAN API DOCUMENTATION (CUSTOM)
       # ============================================================
 
       - name: BB1) Prepare Lean API documentation build

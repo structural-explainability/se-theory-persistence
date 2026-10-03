@@ -281,9 +281,6 @@ name = "se-theory-persistence"
 version = "0.1.0"
 source = { virtual = "." }
 default-groups = "all"
-dependencies = [
-    { name = "se-theory-reference-kit" },
-]
 
 [package.dev-dependencies]
 dev = [
@@ -295,22 +292,12 @@ docs = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "se-theory-reference-kit" }]
 
 [package.metadata.requires-dev]
 dev = [{ name = "prek" }]
 docs = [
     { name = "mkdocstrings", extras = ["python"] },
     { name = "zensical" },
-]
-
-[[package]]
-name = "se-theory-reference-kit"
-version = "0.4.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/28/e8/f3b49af8596f44f6bef8e2166aead3bb748ada9a16274cc9dd8a5dc390dc/se_theory_reference_kit-0.4.0.tar.gz", hash = "sha256:436c737d3881e53773b70b359cb62c8ced36e6f4a83da562b6cc433070aaf5dd", size = 103547, upload-time = "2026-10-03T13:20:29.024Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/9f/dc/f04abf75eb957ee019debd7aa5d29879cbfe7e2706d052e24830a9c8f68a/se_theory_reference_kit-0.4.0-py3-none-any.whl", hash = "sha256:cdf95bf155b656de45f1bd92d5c486181983620f06451d2b4e66c8955541fcfc", size = 44421, upload-time = "2026-10-03T13:20:27.597Z" },
 ]
 
 [[package]]

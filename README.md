@@ -47,27 +47,17 @@ SE.Persistence.lean
 SE.Persistence/Surface.lean
 ```
 
-## Build
+## Developer
 
-Use VS Code Menu:
-View / Command Palette / `Developer: Reload Window` to refresh.
+Maintain:
 
-```shell
-elan self update
-lake update
-lake build
-lake build TestAll
-uv run se-ref-validate
-uv run se-ref-export --check
-uv run se-validate --strict
-```
+- `lakefile.toml`
+- `lean-toolchain`
+- `reference/theory-reference.toml` - hand-maintained configuration
+- `reference/*.toml` - hand-maintained/scaffolded reference source artifacts
+- Lean source + RR comments - hand-maintained theory source
 
-## Command Reference
-
-<details>
-<summary>Show command reference</summary>
-
-### In a machine terminal
+### Clone and Open Project in VS Code
 
 Open a machine terminal where you want the project:
 
@@ -78,68 +68,45 @@ cd se-theory-neutral-substrate
 code .
 ```
 
-### In a VS Code terminal
+### Setup and Run
 
 Use VS Code Menu:
 View / Command Palette / `Developer: Reload Window` to refresh.
 
 ```shell
-elan self update
-lake update
-
-uv self update
-uv python pin 3.15
-uv lock --upgrade
-uv sync --extra dev --extra docs --upgrade
-
-# install git hooks once per clone
-uvx pre-commit install
-
-# build Lean source of truth
-lake build
-lake build TestAll
+.\sit.ps1
+.\rel.ps1
 
 # inspect shared theory-reference command surface
-uv run se-theory-reference --help
-uv run se-theory-reference validate --help
-uv run se-theory-reference scaffold --help
-uv run se-theory-reference export --help
-uv run se-theory-reference catalog --help
-uv run se-theory-reference inspect --help
+uvx se-theory-reference-kit@latest --help
+uvx se-theory-reference-kit@latest validate --help
+uvx se-theory-reference-kit@latest scaffold --help
+uvx se-theory-reference-kit@latest export --help
+uvx se-theory-reference-kit@latest catalog --help
+uvx se-theory-reference-kit@latest inspect --help
 
 # validate reference artifacts against the declared Lean public surface
-uv run se-theory-reference validate
-uv run se-theory-reference validate --strict
+uvx se-theory-reference-kit@latest validate
+uvx se-theory-reference-kit@latest validate --strict
 
 # scaffold reference artifacts from Lean public declarations
-uv run se-theory-reference scaffold
-uv run se-theory-reference scaffold --dry-run
-uv run se-theory-reference scaffold --overwrite
+uvx se-theory-reference-kit@latest scaffold
+uvx se-theory-reference-kit@latest scaffold --dry-run
+uvx se-theory-reference-kit@latest scaffold --overwrite
 
 # regenerate or check generated JSON artifacts from reference TOML
-uv run se-theory-reference export
-uv run se-theory-reference export --check
+uvx se-theory-reference-kit@latest export
+uvx se-theory-reference-kit@latest export --check
 
 # build or verify the generated reference catalog
-uv run se-theory-reference catalog
-uv run se-theory-reference catalog --check
+uvx se-theory-reference-kit@latest catalog
+uvx se-theory-reference-kit@latest catalog --check
 
 # inspect resolved repository configuration and reference declarations
-uv run se-theory-reference inspect
+uvx se-theory-reference-kit@latest inspect
 
 # validate SE manifest file
 uvx se-manifest-schema validate-manifest --path SE_MANIFEST.toml --strict
-
-# fix issues
-git add -A
-uvx pre-commit run --all-files
-# repeat if changes were made
-uvx pre-commit run --all-files
-
-# type checks, tests, docs
-uv run python -m pyright
-uv run python -m pytest
-uv run python -m zensical build
 
 # save progress
 git add -A
@@ -147,15 +114,21 @@ git commit -m "update"
 git push -u origin main
 ```
 
-</details>
-
 ## Authority Manifest
 
 [.accountability/surfaces.toml](./.accountability/surfaces.toml)
 
+## Changelog
+
+[CHANGELOG.md](./CHANGELOG.md)
+
 ## Citation
 
 [CITATION.cff](./CITATION.cff)
+
+## Documentation
+
+[Documentation](https://structural-explainability.github.io/se-theory-persistence/)
 
 ## License
 
