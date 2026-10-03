@@ -1,7 +1,7 @@
 # ============================================================
-# .github/workflows/deploy-zensical-lean.yml (LEAN+ALL-PY-REPOS)
+# .github/workflows/deploy-zensical-lean.yml (CUSTOM LEAN+ALL-PY-REPOS)
 # ============================================================
-# Updated: 2026-10-02
+# Updated: 2026-10-03
 #
 # WHY: Build and deploy documentation to GitHub Pages on pushes to main.
 # REQ: Repo Settings -> Pages -> Build and deployment -> Source:
@@ -140,7 +140,7 @@ jobs:
           packagesDir = "../.lake/packages"
 
           [[require]]
-          name = "se-theory-transformation"
+          name = "se-theory-persistence"
           path = "../"
 
           [[require]]
