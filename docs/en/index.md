@@ -1,9 +1,12 @@
 # SE Theory: Persistence
 
-Lean 4 formalization of foundational Persistence theory for Structural
-Explainability.
+Lean 4 formalization of foundational Persistence theory for
+Structural Explainability.
 
-This repository defines identity survival, breakage, invariance, and
+Persistence asks when something should still count
+as the same identity after it has been transformed.
+
+This repository formalizes identity survival, breakage, invariance, and
 equivalence under transformation.
 
 - [Lean API Reference](https://structural-explainability.github.io/se-theory-persistence/lean/)

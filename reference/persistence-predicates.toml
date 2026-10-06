@@ -109,3 +109,23 @@ lean_symbol = "SE.Persistence.Classification.Survives"
 lean_kind = "def"
 source_module = "SE.Persistence.Relation.Survival"
 description = "Identity survives from x to y: a finite chain of preserving steps."
+
+[predicate.Relationinvariants]
+order = 11
+id = "Relationinvariants"
+cite_id = "PS.DEF.RELATION_INVARIANTS"
+name = "relationInvariants"
+lean_symbol = "SE.Persistence.relationInvariants"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "All predicates constant along the steps of a relation."
+
+[predicate.Observationalequivalence]
+order = 12
+id = "Observationalequivalence"
+cite_id = "PS.DEF.OBSERVATIONAL_EQUIVALENCE"
+name = "observationalEquivalence"
+lean_symbol = "SE.Persistence.observationalEquivalence"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "Agreement on every observable in a family; no basis semantics is assumed."

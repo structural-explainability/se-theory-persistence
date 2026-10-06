@@ -19,6 +19,17 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ---
 
+## [0.2.0] - 2026-10-06
+
+### Added
+
+- Generic observational equivalence and the full characterization of generated
+  equivalence by all step invariants, including the classification-level result.
+- Preservation equivalence and observational completeness via invariant
+  saturation, without selecting carrier or identity basis semantics.
+
+---
+
 ## [0.1.1] - 2026-10-06
 
 ### Fixed
@@ -175,7 +186,7 @@ git push origin vX.Y.Z
 Create GitHub Release after pushing tag, for example with a command like this:
 
 ```shell
-gh release create v0.1.1 --verify-tag --title "0.1.1"  --generate-notes
+gh release create v0.2.0 --verify-tag --title "0.2.0"  --generate-notes
 ```
 
 ## Only As Needed (delete a tag)

@@ -201,3 +201,73 @@ lean_symbol = "SE.Persistence.Classification.survives_mono"
 lean_kind = "theorem"
 source_module = "SE.Persistence.Relation.Survival"
 description = "Preserving more transformations survives more."
+
+[theorem.ObservationalequivalenceEquivalence]
+order = 20
+id = "ObservationalequivalenceEquivalence"
+cite_id = "PS.THM.OBSERVATIONAL_EQUIVALENCE_EQUIVALENCE"
+name = "observationalEquivalence_equivalence"
+lean_symbol = "SE.Persistence.observationalEquivalence_equivalence"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "Agreement on a family of observables is an equivalence relation."
+
+[theorem.StepsRespectObservablesIff]
+order = 21
+id = "StepsRespectObservablesIff"
+cite_id = "PS.THM.STEPS_RESPECT_OBSERVABLES_IFF"
+name = "steps_respect_observables_iff"
+lean_symbol = "SE.Persistence.steps_respect_observables_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "Steps respect the observational kernel exactly when all observables are invariant."
+
+[theorem.RelationinvariantsGenerated]
+order = 22
+id = "RelationinvariantsGenerated"
+cite_id = "PS.THM.RELATION_INVARIANTS_GENERATED"
+name = "relationInvariants_generated"
+lean_symbol = "SE.Persistence.relationInvariants_generated"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "Taking equivalence closure does not change the invariant predicates."
+
+[theorem.GeneratedEqObservationalequivalence]
+order = 23
+id = "GeneratedEqObservationalequivalence"
+cite_id = "PS.THM.GENERATED_EQ_OBSERVATIONAL_EQUIVALENCE"
+name = "generated_eq_observationalEquivalence"
+lean_symbol = "SE.Persistence.generated_eq_observationalEquivalence"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "Generated identity is exactly agreement on all step invariants."
+
+[theorem.ObservablesInvariantIffGeneratedRespects]
+order = 24
+id = "ObservablesInvariantIffGeneratedRespects"
+cite_id = "PS.THM.OBSERVABLES_INVARIANT_IFF_GENERATED_RESPECTS"
+name = "observables_invariant_iff_generated_respects"
+lean_symbol = "SE.Persistence.observables_invariant_iff_generated_respects"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "Preservation: all observables are invariant iff generated identity respects them."
+
+[theorem.ObservationalCompletenessIffInvariantSaturation]
+order = 25
+id = "ObservationalCompletenessIffInvariantSaturation"
+cite_id = "PS.THM.OBSERVATIONAL_COMPLETENESS_IFF_INVARIANT_SATURATION"
+name = "observational_completeness_iff_invariant_saturation"
+lean_symbol = "SE.Persistence.observational_completeness_iff_invariant_saturation"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "Completeness means every step invariant is constant on observational classes."
+
+[theorem.ClassificationIdentityrelIffAllInvariantsAgree]
+order = 26
+id = "ClassificationIdentityrelIffAllInvariantsAgree"
+cite_id = "PS.THM.IDENTITY_REL_IFF_ALL_INVARIANTS_AGREE"
+name = "Classification.identityRel_iff_all_invariants_agree"
+lean_symbol = "SE.Persistence.Classification.identityRel_iff_all_invariants_agree"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Invariance"
+description = "Identity holds exactly when every persistence invariant agrees at the two states."

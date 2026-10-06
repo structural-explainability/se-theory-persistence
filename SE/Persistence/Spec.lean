@@ -187,6 +187,42 @@ def PS_THM_STEP_BRK_NOT_SEPARATING : String :=
 def PS_THM_SURVIVES_MONO : String :=
   "PS.THM.SURVIVES_MONO"
 
+/-- Stable citation identifier for `relationInvariants`. -/
+def PS_DEF_RELATION_INVARIANTS : String :=
+  "PS.DEF.RELATION_INVARIANTS"
+
+/-- Stable citation identifier for `observationalEquivalence`. -/
+def PS_DEF_OBSERVATIONAL_EQUIVALENCE : String :=
+  "PS.DEF.OBSERVATIONAL_EQUIVALENCE"
+
+/-- Stable citation identifier for `observationalEquivalence_equivalence`. -/
+def PS_THM_OBSERVATIONAL_EQUIVALENCE_EQUIVALENCE : String :=
+  "PS.THM.OBSERVATIONAL_EQUIVALENCE_EQUIVALENCE"
+
+/-- Stable citation identifier for `steps_respect_observables_iff`. -/
+def PS_THM_STEPS_RESPECT_OBSERVABLES_IFF : String :=
+  "PS.THM.STEPS_RESPECT_OBSERVABLES_IFF"
+
+/-- Stable citation identifier for `relationInvariants_generated`. -/
+def PS_THM_RELATION_INVARIANTS_GENERATED : String :=
+  "PS.THM.RELATION_INVARIANTS_GENERATED"
+
+/-- Stable citation identifier for `generated_eq_observationalEquivalence`. -/
+def PS_THM_GENERATED_EQ_OBSERVATIONAL_EQUIVALENCE : String :=
+  "PS.THM.GENERATED_EQ_OBSERVATIONAL_EQUIVALENCE"
+
+/-- Stable citation identifier for `observables_invariant_iff_generated_respects`. -/
+def PS_THM_OBSERVABLES_INVARIANT_IFF_GENERATED_RESPECTS : String :=
+  "PS.THM.OBSERVABLES_INVARIANT_IFF_GENERATED_RESPECTS"
+
+/-- Stable citation identifier for `observational_completeness_iff_invariant_saturation`. -/
+def PS_THM_OBSERVATIONAL_COMPLETENESS_IFF_INVARIANT_SATURATION : String :=
+  "PS.THM.OBSERVATIONAL_COMPLETENESS_IFF_INVARIANT_SATURATION"
+
+/-- Stable citation identifier for `Classification.identityRel_iff_all_invariants_agree`. -/
+def PS_THM_IDENTITY_REL_IFF_ALL_INVARIANTS_AGREE : String :=
+  "PS.THM.IDENTITY_REL_IFF_ALL_INVARIANTS_AGREE"
+
 end
 
 end SE.Persistence.Spec

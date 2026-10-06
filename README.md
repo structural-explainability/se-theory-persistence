@@ -13,9 +13,12 @@
 > Lean 4 formalization of foundational persistence theory
 > for Structural Explainability (SE).
 
+Persistence asks when something should still count as the same identity
+after it has been transformed.
+
 This repository defines the formal vocabulary and relations needed to reason
-about identity survival, breakage, invariance, and equivalence under
-transformation.
+about identity survival, breakage, invariance, and equivalence
+under transformation.
 
 It does not own transformation theory itself, identity regimes, domain-specific
 survival criteria, accountable entities, evolution protocols, or operational
