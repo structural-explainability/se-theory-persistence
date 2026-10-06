@@ -80,7 +80,7 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 Follow these steps exactly when creating a new release.
 
-### One-Time Zenodo Authorization
+### Optional: One-Time Zenodo Authorization
 
 1. Sign in to Zenodo.
 2. Open your profile menu in the upper-right.
@@ -175,7 +175,7 @@ git push origin vX.Y.Z
 Create GitHub Release after pushing tag, for example with a command like this:
 
 ```shell
-gh release create v0.1.0 --verify-tag --title "0.1.0"  --generate-notes
+gh release create v0.1.1 --verify-tag --title "0.1.1"  --generate-notes
 ```
 
 ## Only As Needed (delete a tag)
