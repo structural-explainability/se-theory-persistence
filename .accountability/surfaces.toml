@@ -202,8 +202,8 @@ commands = [
     "lake build",
     "lake test",
     "lake lint",
-    "uv run se-theory-reference export --check",
-    "uv run se-theory-reference catalog --check",
-    "uv run se-theory-reference validate",
-    "uv run se-theory-reference validate --strict",
+    "uvx se-theory-reference-kit@latest export --check",
+    "uvx se-theory-reference-kit@latest catalog --check",
+    "uvx se-theory-reference-kit@latest validate",
+    "uvx se-theory-reference-kit@latest validate --strict",
 ]

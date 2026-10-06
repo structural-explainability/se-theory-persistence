@@ -19,6 +19,19 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ---
 
+## [0.1.1] - 2026-10-06
+
+### Fixed
+
+- Aligned the semantic Transformation dependency declaration with the existing
+  `v0.5.1` Lake pin and documented the taxonomy-only integration boundary.
+- Corrected reference-tool command names, public-source and clone paths, the
+  documentation workflow link, and the release-validation snapshot directory.
+- Removed the manifest summary's unsupported admissibility qualifier; formal
+  definitions and proofs are unchanged.
+
+---
+
 ## [0.1.0] - 2026-10-03
 
 ### Added
@@ -94,11 +107,6 @@ Follow these steps exactly when creating a new release.
 
 # Update GitHub Actions and pin all action references to immutable SHAs.
 uvx gha-tools autoupdate --pin=all --write .github/workflows
-
-# Update hooks.
-uvx prek update
-git add -A
-uvx prek run --all-files
 
 # Audit the resulting GitHub configuration for security findings.
 # NO .github\workflows\deploy-zensical.yml
@@ -179,5 +187,6 @@ git push origin :refs/tags/vX.Z.Y
 
 ## Links
 
-[Unreleased]: https://github.com/structural-explainability/se-theory-persistence/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/structural-explainability/se-theory-persistence/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.1.1
 [0.1.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.1.0

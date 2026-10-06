@@ -14,7 +14,7 @@
 # ============================================================
 
 name = "se-theory-persistence"
-version = "0.1.0"
+version = "0.1.1"
 license = "MIT"
 
 
@@ -30,8 +30,7 @@ lintDriver = "SELint"
 [[require]]
 name = "se-theory-transformation"
 git = "https://github.com/structural-explainability/se-theory-transformation"
-rev = "main"
-
+rev = "v0.5.1"
 
 # ============================================================
 # LEAN OPTIONS
@@ -61,7 +60,7 @@ weak.linter.unicodeLinter = false
 [[require]]
 name = "mathlib"
 scope = "leanprover-community"
-rev = "v4.32.1"
+rev = "v4.34.0"
 
 # ============================================================
 # PUBLIC LIBRARY

@@ -12,8 +12,8 @@ message: "If you use this work, please cite it using the metadata in CITATION.cf
 type: software
 
 title: "SE Theory: Persistence"
-version: "0.1.0"
-date-released: "2026-10-03"
+version: "0.1.1"
+date-released: "2026-10-06"
 
 authors:
   - family-names: Case

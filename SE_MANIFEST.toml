@@ -22,7 +22,7 @@ class = "theory"
 kind = "foundation"
 status = "active"
 since = "2026"
-summary = "Lean 4 formalization of foundational persistence theory for identity survival, invariance, equivalence, and breakage under admissible transformation."
+summary = "Lean 4 formalization of foundational persistence theory for identity survival, invariance, equivalence, and breakage under transformation."
 
 # === Layer Position ===
 
@@ -34,7 +34,7 @@ role = "foundational-persistence-theory"
 
 [depends]
 required = [
-  { repository = "se-theory-transformation", kind = "semantic", version = "main" },
+  { repository = "se-theory-transformation", kind = "semantic", version = "v0.5.1" },
 ]
 optional = []
 
@@ -80,9 +80,9 @@ excludes = [
 [validation]
 # Validates repository declaration, manifest schema conformance,
 # reference artifacts, generated artifacts, and Lean public surface coverage.
-export_check_entrypoint = "uv run --locked se-theory-reference export --check"
-reference_entrypoint = "uv run --locked se-theory-reference validate"
-strict_entrypoint = "uv run --locked se-theory-reference validate --strict"
+export_check_entrypoint = "uvx se-theory-reference-kit@latest export --check"
+reference_entrypoint = "uvx se-theory-reference-kit@latest validate"
+strict_entrypoint = "uvx se-theory-reference-kit@latest validate --strict"
 
 # === Behavior / governance ===
 

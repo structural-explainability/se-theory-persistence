@@ -24,9 +24,40 @@ imported by downstream Structural Explainability repositories.
 This repository is a foundation theory-layer repository
 for Structural Explainability.
 
-Persistence depends on Structural Explainability Transformation Theory
-for transformation kinds, families, and operators.
-It exposes persistence structures and results for downstream theory layers.
+Persistence pins Structural Explainability Transformation Theory `v0.5.1` in
+`lakefile.toml`. `lake-manifest.json` resolves that tag to commit
+`350c7ff01aa7bf9a7119f0a44ce652d7a6933154`; `SE_MANIFEST.toml` declares the
+same semantic dependency. Transformation is a Lean dependency, not a Python
+runtime dependency.
+
+`SE.Persistence.Reference.Lift` directly imports
+`SE.Transformation.Domain.Operator.Semantics` and consumes `OperatorCode`,
+`TransformationFamily`, `TransformationKind`, `operatorFamily`, and
+`operatorKind`. The family and kind lifts precompose both `pattern` and
+`persist` with the authoritative upstream taxonomy maps. `Conformance` and
+the lift tests consume that API through `Lift`; the public Persistence import
+includes those modules. The versioning test uses `RV` and `VS` in the
+`versioning` family and `BR` in the `branching` family.
+
+The core classification and relation modules remain generic in the
+transformation domain and carrier. `Dynamics.step` is an arbitrary supplied
+relation. It does not carry the frame and required-change laws of upstream
+`StateModel`. The free dynamics used in separation proofs is a generic witness;
+no compatibility with a Transformation state model is asserted.
+
+Transformation `v0.5.1` also defines atomic effect footprints, required-change
+clauses, state models, sequences, and partial composition and orthogonality
+lookups. Persistence does not consume those APIs or derive persistence
+classifications from them. Its `Reach` and `Generated` closures use the supplied
+preserving-step relation. They do not consult upstream composition or
+orthogonality lookups. Interaction with those concepts remains planned work in
+`CHANGELOG.md`.
+
+Connecting these layers would require explicit choices of a state model,
+identity criterion, applicability, and classification, plus proofs of the
+relevant compatibility conditions. The current Persistence surface supplies
+none of those connections. It exposes its existing structures and results for
+downstream theory layers.
 
 ## Covers
 

@@ -7,7 +7,7 @@
 
 [![CI-Lean](https://github.com/structural-explainability/se-theory-persistence/actions/workflows/ci-lean.yml/badge.svg?branch=main)](https://github.com/structural-explainability/se-theory-persistence/actions/workflows/ci-lean.yml)
 [![CI](https://github.com/structural-explainability/se-theory-persistence/actions/workflows/ci-python-zensical.yml/badge.svg?branch=main)](https://github.com/structural-explainability/se-theory-persistence/actions/workflows/ci-python-zensical.yml)
-[![Docs](https://github.com/structural-explainability/se-theory-persistence/actions/workflows/deploy-zensical.yml/badge.svg?branch=main)](https://github.com/structural-explainability/se-theory-persistence/actions/workflows/deploy-zensical.yml)
+[![Docs](https://github.com/structural-explainability/se-theory-persistence/actions/workflows/deploy-zensical-lean.yml/badge.svg?branch=main)](https://github.com/structural-explainability/se-theory-persistence/actions/workflows/deploy-zensical-lean.yml)
 [![Links](https://github.com/structural-explainability/se-theory-persistence/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/structural-explainability/se-theory-persistence/actions/workflows/links.yml)
 
 > Lean 4 formalization of foundational persistence theory
@@ -43,8 +43,7 @@ import SE.Persistence
 The public import surface is curated in:
 
 ```text
-SE.Persistence.lean
-SE.Persistence/Surface.lean
+SE/Persistence.lean
 ```
 
 ## Developer
@@ -62,9 +61,9 @@ Maintain:
 Open a machine terminal where you want the project:
 
 ```shell
-git clone https://github.com/structural-explainability/se-theory-neutral-substrate
+git clone https://github.com/structural-explainability/se-theory-persistence
 
-cd se-theory-neutral-substrate
+cd se-theory-persistence
 code .
 ```
 

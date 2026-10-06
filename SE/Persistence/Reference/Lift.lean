@@ -23,8 +23,9 @@ Operators in the same family (kind) receive the same pattern by construction.
 This module does not choose a family-level classification; it only states how
 one is consumed at operator granularity.
 
-This is the only module of the Persistence theory that imports the
-Transformation theory.
+This is the only module of the Persistence theory that directly imports a
+Transformation module. It uses the taxonomy API only; the generic persistence
+dynamics do not impose Transformation state-model effect laws.
 -/
 
 namespace SE.Persistence
