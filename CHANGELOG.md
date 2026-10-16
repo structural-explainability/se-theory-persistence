@@ -11,6 +11,10 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ## [Unreleased]
 
+### Added
+
+- SE.Persistence.Relation.Observability
+
 ### Changed
 
 - Moved to 3.14 from 3.15 for zensical docs

@@ -59,3 +59,13 @@ lean_symbol = "SE.Persistence.freeDynamics"
 lean_kind = "def"
 source_module = "SE.Persistence.Relation.Generated"
 description = "The free dynamics: each transformation t relates one private pair of states, (t, false) to (t, true), and nothing else."
+
+[vocabulary.Presentable]
+order = 6
+id = "Presentable"
+cite_id = "PS.DEF.PRESENTABLE"
+name = "presentable"
+lean_symbol = "SE.Persistence.presentable"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Observability"
+description = "The predicates a presentation can express: those of the form P (π x)."

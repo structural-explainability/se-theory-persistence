@@ -271,3 +271,103 @@ lean_symbol = "SE.Persistence.Classification.identityRel_iff_all_invariants_agre
 lean_kind = "theorem"
 source_module = "SE.Persistence.Relation.Invariance"
 description = "Identity holds exactly when every persistence invariant agrees at the two states."
+
+[theorem.ObservationalequivalencePresentableIff]
+order = 27
+id = "ObservationalequivalencePresentableIff"
+cite_id = "PS.THM.OBSERVATIONAL_EQUIVALENCE_PRESENTABLE_IFF"
+name = "observationalEquivalence_presentable_iff"
+lean_symbol = "SE.Persistence.observationalEquivalence_presentable_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Observability"
+description = "Observational equivalence over the presentable predicates is equality of presentations."
+
+[theorem.PresentationSoundIff]
+order = 28
+id = "PresentationSoundIff"
+cite_id = "PS.THM.PRESENTATION_SOUND_IFF"
+name = "presentationSound_iff"
+lean_symbol = "SE.Persistence.Classification.presentationSound_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Observability"
+description = "Soundness means every presentable predicate is a step invariant."
+
+[theorem.PresentationCompleteIff]
+order = 29
+id = "PresentationCompleteIff"
+cite_id = "PS.THM.PRESENTATION_COMPLETE_IFF"
+name = "presentationComplete_iff"
+lean_symbol = "SE.Persistence.Classification.presentationComplete_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Observability"
+description = "Completeness means every step invariant is constant on presentation classes."
+
+[theorem.PresentationCompleteIffInvariantsDetermined]
+order = 30
+id = "PresentationCompleteIffInvariantsDetermined"
+cite_id = "PS.THM.PRESENTATION_COMPLETE_IFF_INVARIANTS_DETERMINED"
+name = "presentationComplete_iff_invariants_determined"
+lean_symbol = "SE.Persistence.Classification.presentationComplete_iff_invariants_determined"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Observability"
+description = "Completeness means every identity invariant is determined by the presentation."
+
+[theorem.NotIdentityRelOfSoundOfNe]
+order = 31
+id = "NotIdentityRelOfSoundOfNe"
+cite_id = "PS.THM.NOT_IDENTITY_REL_OF_SOUND_OF_NE"
+name = "not_identityRel_of_sound_of_ne"
+lean_symbol = "SE.Persistence.Classification.not_identityRel_of_sound_of_ne"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Observability"
+description = "A sound presentation that distinguishes two states certifies that they are not identity-related."
+
+[theorem.IdentityRelOfCompleteOfEq]
+order = 32
+id = "IdentityRelOfCompleteOfEq"
+cite_id = "PS.THM.IDENTITY_REL_OF_COMPLETE_OF_EQ"
+name = "identityRel_of_complete_of_eq"
+lean_symbol = "SE.Persistence.Classification.identityRel_of_complete_of_eq"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Observability"
+description = "A complete presentation that does not distinguish two states certifies that they are identity-related."
+
+[theorem.NotPresentationCompleteIffBlind]
+order = 33
+id = "NotPresentationCompleteIffBlind"
+cite_id = "PS.THM.NOT_COMPLETE_IFF_BLIND"
+name = "not_presentationComplete_iff_blind"
+lean_symbol = "SE.Persistence.Classification.not_presentationComplete_iff_blind"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Observability"
+description = "A presentation is not complete exactly when it fails to separate some states that are not identity-related."
+
+[theorem.PresentationSoundOfFactor]
+order = 34
+id = "PresentationSoundOfFactor"
+cite_id = "PS.THM.PRESENTATION_SOUND_OF_FACTOR"
+name = "presentationSound_of_factor"
+lean_symbol = "SE.Persistence.Classification.presentationSound_of_factor"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Observability"
+description = "A coarser presentation of a sound presentation is sound."
+
+[theorem.PresentationCompleteOfFactor]
+order = 35
+id = "PresentationCompleteOfFactor"
+cite_id = "PS.THM.PRESENTATION_COMPLETE_OF_FACTOR"
+name = "presentationComplete_of_factor"
+lean_symbol = "SE.Persistence.Classification.presentationComplete_of_factor"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Observability"
+description = "If a coarser presentation is complete, so is the finer one."
+
+[theorem.PresentationBlindExample]
+order = 36
+id = "PresentationBlindExample"
+cite_id = "PS.THM.PRESENTATION_BLIND_EXAMPLE"
+name = "presentation_blind_example"
+lean_symbol = "SE.Persistence.presentation_blind_example"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Observability"
+description = "Blindness occurs: some classification, dynamics and presentation fail to separate two states that are not identity-related."

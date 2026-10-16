@@ -129,3 +129,23 @@ lean_symbol = "SE.Persistence.observationalEquivalence"
 lean_kind = "def"
 source_module = "SE.Persistence.Relation.Invariance"
 description = "Agreement on every observable in a family; no basis semantics is assumed."
+
+[predicate.PresentationSound]
+order = 13
+id = "PresentationSound"
+cite_id = "PS.DEF.PRESENTATION_SOUND"
+name = "Presentation sound"
+lean_symbol = "SE.Persistence.Classification.PresentationSound"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Observability"
+description = "Identity-related states have equal presentations."
+
+[predicate.PresentationComplete]
+order = 14
+id = "PresentationComplete"
+cite_id = "PS.DEF.PRESENTATION_COMPLETE"
+name = "Presentation complete"
+lean_symbol = "SE.Persistence.Classification.PresentationComplete"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Observability"
+description = "States with equal presentations are identity-related."

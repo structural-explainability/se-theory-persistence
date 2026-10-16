@@ -38,6 +38,7 @@ public_modules = [
     "SE.Persistence.Relation.Generated",
     "SE.Persistence.Relation.Invariance",
     "SE.Persistence.Relation.NonCollapse",
+    "SE.Persistence.Relation.Observability",
     "SE.Persistence.Relation.Survival",
     "SE.Persistence.Spec",
 ]
