@@ -11,6 +11,16 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ## [Unreleased]
 
+### Planned
+
+- Interaction of classification with transformation composition and orthogonality
+- Patterns of applicability and classification, and split pressure
+- Carrier-sensitive separation of classifications
+
+---
+
+## [0.3.0] - 2026-10-16
+
 ### Added
 
 - SE.Persistence.Relation.Observability
@@ -19,12 +29,6 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 - Moved to 3.14 from 3.15 for zensical docs
 - Updated tooling
-
-### Planned
-
-- Interaction of classification with transformation composition and orthogonality
-- Patterns of applicability and classification, and split pressure
-- Carrier-sensitive separation of classifications
 
 ---
 
@@ -207,6 +211,8 @@ git push origin :refs/tags/vX.Z.Y
 
 ## Links
 
-[Unreleased]: https://github.com/structural-explainability/se-theory-persistence/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/structural-explainability/se-theory-persistence/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.3.0
+[0.2.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.2.0
 [0.1.1]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.1.1
 [0.1.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.1.0
