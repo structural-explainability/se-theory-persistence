@@ -13,7 +13,7 @@
 [project]
 name = "se-theory-persistence" # Package distribution name (lowercase and dashes).
 readme = "README.md"
-requires-python = ">=3.15"
+requires-python = ">=3.14"
 version = "0.2.0"
 
 dependencies = []
@@ -21,10 +21,7 @@ dependencies = []
 [dependency-groups]
 # WHY: Dependency groups separate development and documentation tools from project runtime dependencies.
 
-dev = [
-  # REQ: External packages used for linting, testing, type checking, etc.
-  "prek", # WHY: Run repository hooks for consistent formatting, linting, and checks.
-]
+dev = []
 
 docs = [
   # REQ: External packages used to generate project documentation.
