@@ -11,7 +11,10 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ## [Unreleased]
 
-###
+### Changed
+
+- Moved to 3.14 from 3.15 for zensical docs
+- Updated tooling
 
 ### Planned
 
