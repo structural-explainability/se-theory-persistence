@@ -25,8 +25,19 @@ description = "Persistence theory repository for Structural Explainability."
 root_module = "SE"
 
 public_modules = [
-    "SE",
+    "SE.",
     "SE.Persistence",
+    # Get the following with:
+    # Get-ChildItem .\SE\Persistence -Recurse -Filter *.lean |
+    # ForEach-Object { $_.FullName.Substring((Get-Location).Path.Length + 1) } |
+    # Sort-Object
+    "SE.Persistence.Commitment.Branching",
+    "SE.Persistence.Commitment.Cardinality",
+    "SE.Persistence.Commitment.Compare",
+    "SE.Persistence.Commitment.Consistency",
+    "SE.Persistence.Commitment.Interpretation",
+    "SE.Persistence.Commitment.Observed",
+    "SE.Persistence.Commitment.Status",
     "SE.Persistence.Conformance",
     "SE.Persistence.Core",
     "SE.Persistence.Domain.Classification",
@@ -36,6 +47,7 @@ public_modules = [
     "SE.Persistence.Relation.Equivalence",
     "SE.Persistence.Relation.Generated",
     "SE.Persistence.Relation.Invariance",
+    "SE.Persistence.Relation.Licence",
     "SE.Persistence.Relation.NonCollapse",
     "SE.Persistence.Relation.Observability",
     "SE.Persistence.Relation.Survival",

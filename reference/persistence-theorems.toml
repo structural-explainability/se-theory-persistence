@@ -351,3 +351,433 @@ lean_symbol = "SE.Persistence.presentation_blind_example"
 lean_kind = "theorem"
 source_module = "SE.Persistence.Relation.Observability"
 description = "Blindness occurs: some classification, dynamics and presentation fail to separate two states that are not identity-related."
+
+[theorem.AdmissibleGeneratedOfConsistent]
+order = 35
+id = "AdmissibleGeneratedOfConsistent"
+cite_id = "PS.THM.ADMISSIBLE_GENERATED_OF_CONSISTENT"
+name = "Admissible generated of consistent"
+lean_symbol = "SE.Persistence.admissible_generated_of_consistent"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Consistency"
+description = "When the commitments are consistent, the generated relation is admissible."
+
+[theorem.ConsistentOfAdmissible]
+order = 36
+id = "ConsistentOfAdmissible"
+cite_id = "PS.THM.CONSISTENT_OF_ADMISSIBLE"
+name = "Consistent of admissible"
+lean_symbol = "SE.Persistence.consistent_of_admissible"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Consistency"
+description = "An admissible relation makes the commitments consistent."
+
+[theorem.ConsistentIffExistsAdmissible]
+order = 37
+id = "ConsistentIffExistsAdmissible"
+cite_id = "PS.THM.CONSISTENT_IFF_EXISTS_ADMISSIBLE"
+name = "Consistent iff exists admissible"
+lean_symbol = "SE.Persistence.consistent_iff_exists_admissible"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Consistency"
+description = "Consistency is exactly the existence of an admissible identity relation."
+
+[theorem.ConsistentUnionIff]
+order = 38
+id = "ConsistentUnionIff"
+cite_id = "PS.THM.CONSISTENT_UNION_IFF"
+name = "Consistent union iff"
+lean_symbol = "SE.Persistence.consistent_union_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Consistency"
+description = "Distinctness from two independent sources is consistent with P exactly when each source is. Several observers can be checked one at a time."
+
+[theorem.GeneratedIffReachSymmStep]
+order = 39
+id = "GeneratedIffReachSymmStep"
+cite_id = "PS.THM.GENERATED_IFF_REACH_SYMM_STEP"
+name = "Generated iff reach symm step"
+lean_symbol = "SE.Persistence.generated_iff_reach_symmStep"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Consistency"
+description = "x and y are generated-identical exactly when a finite chain of asserted pairs, each used in either direction, connects them. The chain is the explanation for the identity."
+
+[theorem.RequiredIffForallAdmissible]
+order = 40
+id = "RequiredIffForallAdmissible"
+cite_id = "PS.THM.REQUIRED_IFF_ALL_ADMISSIBLE"
+name = "Required iff forall admissible"
+lean_symbol = "SE.Persistence.required_iff_forall_admissible"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Status"
+description = "Under consistent commitments, a pair is required exactly when every admissible identity relation identifies it."
+
+[theorem.ForbiddenIffForallAdmissible]
+order = 41
+id = "ForbiddenIffForallAdmissible"
+cite_id = "PS.THM.FORBIDDEN_IFF_ALL_ADMISSIBLE"
+name = "Forbidden iff forall admissible"
+lean_symbol = "SE.Persistence.forbidden_iff_forall_admissible"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Status"
+description = "A pair is forbidden exactly when every admissible identity relation separates it. This holds without assuming the commitments are consistent: if none is, both sides are true."
+
+[theorem.UndeterminedIff]
+order = 42
+id = "UndeterminedIff"
+cite_id = "PS.THM.UNDETERMINED_IFF"
+name = "Undetermined iff"
+lean_symbol = "SE.Persistence.undetermined_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Status"
+description = "Under consistent commitments, a pair is undetermined exactly when one admissible relation identifies it and another separates it."
+
+[theorem.NotRequiredAndForbidden]
+order = 43
+id = "NotRequiredAndForbidden"
+cite_id = "PS.THM.NOT_REQUIRED_AND_FORBIDDEN"
+name = "Not required and forbidden"
+lean_symbol = "SE.Persistence.not_required_and_forbidden"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Status"
+description = "Under consistent commitments, no pair is both required and forbidden."
+
+[theorem.RequiredMono]
+order = 44
+id = "RequiredMono"
+cite_id = "PS.THM.REQUIRED_MONO"
+name = "Required mono"
+lean_symbol = "SE.Persistence.required_mono"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Status"
+description = "Adding same-commitments keeps every requirement."
+
+[theorem.ForbiddenMono]
+order = 45
+id = "ForbiddenMono"
+cite_id = "PS.THM.FORBIDDEN_MONO"
+name = "Forbidden mono"
+lean_symbol = "SE.Persistence.forbidden_mono"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Status"
+description = "Adding same-commitments or distinct-commitments keeps every prohibition. Statuses only resolve as commitments grow, until the commitments become inconsistent."
+
+[theorem.ForbiddenOfDistinct]
+order = 46
+id = "ForbiddenOfDistinct"
+cite_id = "PS.THM.FORBIDDEN_OF_DISTINCT"
+name = "Forbidden of distinct"
+lean_symbol = "SE.Persistence.forbidden_of_distinct"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Status"
+description = "A pair asserted distinct is forbidden to be identical."
+
+[theorem.ForbiddenOfRequiredOfDistinct]
+order = 47
+id = "ForbiddenOfRequiredOfDistinct"
+cite_id = "PS.THM.FORBIDDEN_OF_REQUIRED_OF_DISTINCT"
+name = "Forbidden of required of distinct"
+lean_symbol = "SE.Persistence.forbidden_of_required_of_distinct"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Status"
+description = "A forced distinction. If a and b are required identical and a and c are asserted distinct, then b and c are forbidden to be identical, though no one asserted it."
+
+[theorem.ConsistentOfAdmitsClasses]
+order = 48
+id = "ConsistentOfAdmitsClasses"
+cite_id = "PS.THM.CONSISTENT_OF_ADMITS_CLASSES"
+name = "Consistent of admits classes"
+lean_symbol = "SE.Persistence.consistent_of_admitsClasses"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Cardinality"
+description = "A class limit that can be met makes the commitments consistent."
+
+[theorem.AdmitsClassesMono]
+order = 49
+id = "AdmitsClassesMono"
+cite_id = "PS.THM.ADMITS_CLASSES_MONO"
+name = "Admits classes mono"
+lean_symbol = "SE.Persistence.admitsClasses_mono"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Cardinality"
+description = "Allowing more classes keeps the commitments admissible."
+
+[theorem.NotAdmitsClassesTwoOfTriangle]
+order = 50
+id = "NotAdmitsClassesTwoOfTriangle"
+cite_id = "PS.THM.NOT_ADMITS_TWO_CLASSES_OF_TRIANGLE"
+name = "Not admits classes two of triangle"
+lean_symbol = "SE.Persistence.not_admitsClasses_two_of_triangle"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Cardinality"
+description = "Three individuals asserted pairwise distinct cannot fit into two classes. Here the three are given as three distinct-commitments."
+
+[theorem.SepWalkParity]
+order = 51
+id = "SepWalkParity"
+cite_id = "PS.THM.SEP_WALK_PARITY"
+name = "Sep walk parity"
+lean_symbol = "SE.Persistence.sepWalk_parity"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Cardinality"
+description = "Parity law for two classes. Along a walk crossing n distinctions, an assignment into two classes gives the endpoints the same class exactly when n is even."
+
+[theorem.TwoClassesEvenForcesSame]
+order = 52
+id = "TwoClassesEvenForcesSame"
+cite_id = "PS.THM.TWO_CLASSES_EVEN_FORCES_SAME"
+name = "Two classes even forces same"
+lean_symbol = "SE.Persistence.two_classes_even_forces_same"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Cardinality"
+description = "With at most two classes, a walk across an even number of distinctions forces sameness."
+
+[theorem.TwoClassesOddForcesDistinct]
+order = 53
+id = "TwoClassesOddForcesDistinct"
+cite_id = "PS.THM.TWO_CLASSES_ODD_FORCES_DISTINCT"
+name = "Two classes odd forces distinct"
+lean_symbol = "SE.Persistence.two_classes_odd_forces_distinct"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Cardinality"
+description = "With at most two classes, a walk across an odd number of distinctions forces distinctness."
+
+[theorem.ForkSiblingsGenerated]
+order = 54
+id = "ForkSiblingsGenerated"
+cite_id = "PS.THM.FORK_SIBLINGS_GENERATED"
+name = "Fork siblings generated"
+lean_symbol = "SE.Persistence.fork_siblings_generated"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Branching"
+description = "Two successors of one state are generated-identical."
+
+[theorem.MergeSiblingsGenerated]
+order = 55
+id = "MergeSiblingsGenerated"
+cite_id = "PS.THM.MERGE_SIBLINGS_GENERATED"
+name = "Merge siblings generated"
+lean_symbol = "SE.Persistence.merge_siblings_generated"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Branching"
+description = "Two predecessors of one state are generated-identical."
+
+[theorem.NotDistinctOfFork]
+order = 56
+id = "NotDistinctOfFork"
+cite_id = "PS.THM.NOT_DISTINCT_OF_FORK"
+name = "Not distinct of fork"
+lean_symbol = "SE.Persistence.not_distinct_of_fork"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Branching"
+description = "Under consistent commitments, successors of a fork that are both asserted identity-preserving are not asserted distinct."
+
+[theorem.NotDistinctOfMerge]
+order = 57
+id = "NotDistinctOfMerge"
+cite_id = "PS.THM.NOT_DISTINCT_OF_MERGE"
+name = "Not distinct of merge"
+lean_symbol = "SE.Persistence.not_distinct_of_merge"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Branching"
+description = "Under consistent commitments, predecessors of a merge that both continue into the result are not asserted distinct."
+
+[theorem.ForkBranchForbidden]
+order = 58
+id = "ForkBranchForbidden"
+cite_id = "PS.THM.FORK_BRANCH_FORBIDDEN"
+name = "Fork branch forbidden"
+lean_symbol = "SE.Persistence.fork_branch_forbidden"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Branching"
+description = "Given a preserving step from a to b and a distinction between b and c, asserting a to c as preserving is forbidden."
+
+[theorem.GeneratedLEIff]
+order = 59
+id = "GeneratedLEIff"
+cite_id = "PS.THM.GENERATED_LE_IFF"
+name = "Generated le iff"
+lean_symbol = "SE.Persistence.generatedLE_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Compare"
+description = "Containment of generated identities is checked on generators."
+
+[theorem.ExistsGeneratorWitness]
+order = 60
+id = "ExistsGeneratorWitness"
+cite_id = "PS.THM.EXISTS_GENERATOR_WITNESS"
+name = "Exists generator witness"
+lean_symbol = "SE.Persistence.exists_generator_witness"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Compare"
+description = "If the identity generated by P is not contained in the one generated by Q, a single asserted pair of P is the cause: Q does not generate it."
+
+[theorem.ExistsGeneratorDifference]
+order = 61
+id = "ExistsGeneratorDifference"
+cite_id = "PS.THM.EXISTS_GENERATOR_DIFFERENCE"
+name = "Exists generator difference"
+lean_symbol = "SE.Persistence.exists_generator_difference"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Compare"
+description = "If P and Q generate different identity relations, a single asserted pair on one side accounts for the difference."
+
+[theorem.RequiredImpForcedSame]
+order = 62
+id = "RequiredImpForcedSame"
+cite_id = "PS.THM.REQUIRED_IMP_FORCED_SAME"
+name = "Required imp forced same"
+lean_symbol = "SE.Persistence.required_imp_forcedSame"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Interpretation"
+description = "What is required is forced under every constraint."
+
+[theorem.ForbiddenImpForcedDistinct]
+order = 63
+id = "ForbiddenImpForcedDistinct"
+cite_id = "PS.THM.FORBIDDEN_IMP_FORCED_DISTINCT"
+name = "Forbidden imp forced distinct"
+lean_symbol = "SE.Persistence.forbidden_imp_forcedDistinct"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Interpretation"
+description = "What is forbidden is forced distinct under every constraint."
+
+[theorem.ForcedSameOfWeaker]
+order = 64
+id = "ForcedSameOfWeaker"
+cite_id = "PS.THM.FORCED_SAME_OF_WEAKER"
+name = "Forced same of weaker"
+lean_symbol = "SE.Persistence.forcedSame_of_weaker"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Interpretation"
+description = "A stronger constraint forces whatever a weaker one forces. Adding constraints only turns open pairs into forced ones."
+
+[theorem.ForcedSameOfEvenSepWalk]
+order = 65
+id = "ForcedSameOfEvenSepWalk"
+cite_id = "PS.THM.FORCED_SAME_OF_EVEN_SEP_WALK"
+name = "Forced same of even sep walk"
+lean_symbol = "SE.Persistence.forcedSame_of_even_sepWalk"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Interpretation"
+description = "With at most two classes, a walk across an even number of distinctions is forced to identify its endpoints, in every interpretation."
+
+[theorem.ForcedDistinctOfOddSepWalk]
+order = 66
+id = "ForcedDistinctOfOddSepWalk"
+cite_id = "PS.THM.FORCED_DISTINCT_OF_ODD_SEP_WALK"
+name = "Forced distinct of odd sep walk"
+lean_symbol = "SE.Persistence.forcedDistinct_of_odd_sepWalk"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Interpretation"
+description = "With at most two classes, a walk across an odd number of distinctions is forced to separate its endpoints, in every interpretation."
+
+[theorem.PathDistinctForcedSame]
+order = 67
+id = "PathDistinctForcedSame"
+cite_id = "PS.THM.PATH_DISTINCT_FORCED_SAME"
+name = "Path distinct forced same"
+lean_symbol = "SE.Persistence.pathDistinct_forcedSame"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Interpretation"
+description = "With at most two classes, 0 and 2 are forced identical."
+
+[theorem.PathDistinctNotRequired]
+order = 68
+id = "PathDistinctNotRequired"
+cite_id = "PS.THM.PATH_DISTINCT_NOT_REQUIRED"
+name = "Path distinct not required"
+lean_symbol = "SE.Persistence.pathDistinct_not_required"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Interpretation"
+description = "Without the limit, 0 and 2 are not required identical."
+
+[theorem.ClassificationPresentationSoundIffConsistent]
+order = 69
+id = "ClassificationPresentationSoundIffConsistent"
+cite_id = "PS.THM.PRESENTATION_SOUND_IFF_CONSISTENT"
+name = "Presentation sound iff consistent"
+lean_symbol = "SE.Persistence.Classification.presentationSound_iff_consistent"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Observed"
+description = "Soundness of a presentation is consistency with the pairs it separates."
+
+[theorem.ClassificationPresentationCompleteIffRequired]
+order = 70
+id = "ClassificationPresentationCompleteIffRequired"
+cite_id = "PS.THM.PRESENTATION_COMPLETE_IFF_REQUIRED"
+name = "Presentation complete iff required"
+lean_symbol = "SE.Persistence.Classification.presentationComplete_iff_required"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Observed"
+description = "Completeness of a presentation is: every pair it does not separate is required to be identical."
+
+[theorem.ClassificationForbiddenOfSeparated]
+order = 71
+id = "ClassificationForbiddenOfSeparated"
+cite_id = "PS.THM.FORBIDDEN_OF_SEPARATED"
+name = "Forbidden of separated"
+lean_symbol = "SE.Persistence.Classification.forbidden_of_separated"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Observed"
+description = "A pair a presentation separates is forbidden to be identical."
+
+[theorem.ClassificationTwoPresentationsSoundIff]
+order = 72
+id = "ClassificationTwoPresentationsSoundIff"
+cite_id = "PS.THM.TWO_PRESENTATIONS_SOUND_IFF"
+name = "Two presentations sound iff"
+lean_symbol = "SE.Persistence.Classification.two_presentations_sound_iff"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Commitment.Observed"
+description = "Two presentations are both sound exactly when the preserving steps are consistent with the pairs that either one separates."
+
+[theorem.ClassificationToLicenceStepRel]
+order = 73
+id = "ClassificationToLicenceStepRel"
+cite_id = "PS.THM.TO_LICENCE_STEP_REL"
+name = "To licence step rel"
+lean_symbol = "SE.Persistence.Classification.toLicence_stepRel"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Licence"
+description = "A classification and its licence license the same steps."
+
+[theorem.ClassificationToLicenceIdentityRel]
+order = 74
+id = "ClassificationToLicenceIdentityRel"
+cite_id = "PS.THM.TO_LICENCE_IDENTITY_REL"
+name = "To licence identity rel"
+lean_symbol = "SE.Persistence.Classification.toLicence_identityRel"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Licence"
+description = "A classification and its licence generate the same identity relation."
+
+[theorem.OperatorLevelOnIffExistsClassification]
+order = 75
+id = "OperatorLevelOnIffExistsClassification"
+cite_id = "PS.THM.OPERATOR_LEVEL_ON_IFF_EXISTS_CLASSIFICATION"
+name = "Operator level on iff exists classification"
+lean_symbol = "SE.Persistence.operatorLevelOn_iff_exists_classification"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Licence"
+description = "On a given dynamics, a licence agrees with some classification on every step exactly when it is operator-level there."
+
+[theorem.LicenceExistsLicensedStepWitness]
+order = 76
+id = "LicenceExistsLicensedStepWitness"
+cite_id = "PS.THM.EXISTS_LICENSED_STEP_WITNESS"
+name = "Licence exists licensed step witness"
+lean_symbol = "SE.Persistence.Licence.exists_licensed_step_witness"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Licence"
+description = "If the steps licensed by L₁ do not all lie inside the identity generated by L₂, one specific licensed step of L₁ accounts for the difference."
+
+[theorem.NoClassificationRealizesFirstOnly]
+order = 77
+id = "NoClassificationRealizesFirstOnly"
+cite_id = "PS.THM.NO_CLASSIFICATION_REALIZES_FIRST_ONLY"
+name = "No classification realizes first only"
+lean_symbol = "SE.Persistence.no_classification_realizes_firstOnly"
+lean_kind = "theorem"
+source_module = "SE.Persistence.Relation.Licence"
+description = "No classification of the single operator relates 0 and 1 but not 2 and 3 on twoSteps. The identity of firstOnly is not the identity of any classification."

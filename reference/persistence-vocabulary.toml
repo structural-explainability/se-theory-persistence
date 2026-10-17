@@ -49,3 +49,33 @@ lean_symbol = "SE.Persistence.presentable"
 lean_kind = "def"
 source_module = "SE.Persistence.Relation.Observability"
 description = "The predicates a presentation can express: those of the form P (π x)."
+
+[vocabulary.ClassificationToLicence]
+order = 5
+id = "ClassificationToLicence"
+cite_id = "PS.DEF.CLASSIFICATION_TO_LICENCE"
+name = "To licence"
+lean_symbol = "SE.Persistence.Classification.toLicence"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Licence"
+description = "The licence that licenses every step of every preserving operator."
+
+[vocabulary.TwoSteps]
+order = 6
+id = "TwoSteps"
+cite_id = "PS.DEF.TWO_STEPS"
+name = "Two steps"
+lean_symbol = "SE.Persistence.twoSteps"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Licence"
+description = "One operator with two steps: 0 → 1 and 2 → 3."
+
+[vocabulary.FirstOnly]
+order = 7
+id = "FirstOnly"
+cite_id = "PS.DEF.FIRST_ONLY"
+name = "First only"
+lean_symbol = "SE.Persistence.firstOnly"
+lean_kind = "def"
+source_module = "SE.Persistence.Relation.Licence"
+description = "The licence that licenses only steps that start at 0."

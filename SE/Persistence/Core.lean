@@ -9,6 +9,14 @@ public import SE.Persistence.Relation.Breakage
 public import SE.Persistence.Relation.Invariance
 public import SE.Persistence.Relation.NonCollapse
 public import SE.Persistence.Relation.Observability
+public import SE.Persistence.Relation.Licence
+public import SE.Persistence.Commitment.Consistency
+public import SE.Persistence.Commitment.Status
+public import SE.Persistence.Commitment.Cardinality
+public import SE.Persistence.Commitment.Branching
+public import SE.Persistence.Commitment.Compare
+public import SE.Persistence.Commitment.Interpretation
+public import SE.Persistence.Commitment.Observed
 
 /-!
 # Core

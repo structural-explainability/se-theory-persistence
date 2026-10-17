@@ -6,6 +6,7 @@ import SETest.Persistence.Equivalence
 import SETest.Persistence.Invariance
 import SETest.Persistence.NonCollapse
 import SETest.Persistence.Survival
+import SETest.Persistence.Commitment
 
 /-!
 # Persistence Tests

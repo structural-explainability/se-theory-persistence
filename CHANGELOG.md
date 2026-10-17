@@ -13,9 +13,30 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ### Planned
 
-- Interaction of classification with transformation composition and orthogonality
-- Patterns of applicability and classification, and split pressure
-- Carrier-sensitive separation of classifications
+- Integration of new theorem identifiers with the specification, registry, reference artifacts, and conformance checks
+- Carrier-sensitive comparison of identity relations across distinct carriers and dynamics
+- Further investigation of contextual and history-dependent continuation licensing
+
+---
+
+## [0.5.0] - 2026-10-17
+
+### Added
+
+- **Identity commitment calculus:** consistency and admissibility of identity relations under required-same and required-distinct commitments, with finite-chain explanations.
+- **Identity statuses:** required, forbidden, and undetermined judgments, with semantic characterizations, monotonicity, and derived distinctions.
+- **Cardinality constraints:** bounded identity classes, including additional forced identities and parity results for two-class models.
+- **Fork and merge theorems:** conditions under which competing continuations conflict with required distinctness.
+- **Rule comparison:** localization of disagreements between sets of identity commitments.
+- **Step-level licensing:** generalized preservation decisions beyond operator-level classification, with the existing classification model as a special case.
+- **Observation bridge:** characterization of presentation soundness through distinctness constraints, keeping completeness separate.
+
+### Notes
+
+- Existing classification and observability interfaces remain unchanged.
+- History-dependent licensing requires history to be represented in the state.
+- NP-completeness for fixed class limits above two is documented but not formalized.
+- New theorem identifiers await registry, specification, reference, and conformance integration.
 
 ---
 
@@ -221,7 +242,7 @@ git push origin vX.Y.Z
 Create GitHub Release after pushing tag, for example with a command like this:
 
 ```shell
-gh release create v0.4.0 --verify-tag --title "0.4.0"  --generate-notes
+gh release create v0.5.0 --verify-tag --title "0.5.0"  --generate-notes
 ```
 
 ## Only As Needed (delete a tag)
@@ -233,7 +254,8 @@ git push origin :refs/tags/vX.Z.Y
 
 ## Links
 
-[Unreleased]: https://github.com/structural-explainability/se-theory-persistence/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/structural-explainability/se-theory-persistence/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.5.0
 [0.4.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.4.0
 [0.3.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.3.0
 [0.2.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.2.0
