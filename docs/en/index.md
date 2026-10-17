@@ -27,12 +27,6 @@ imported by downstream Structural Explainability repositories.
 This repository is a foundation theory-layer repository
 for Structural Explainability.
 
-Persistence pins Structural Explainability Transformation Theory `v0.5.1` in
-`lakefile.toml`. `lake-manifest.json` resolves that tag to commit
-`350c7ff01aa7bf9a7119f0a44ce652d7a6933154`; `SE_MANIFEST.toml` declares the
-same semantic dependency. Transformation is a Lean dependency, not a Python
-runtime dependency.
-
 `SE.Persistence.Reference.Lift` directly imports
 `SE.Transformation.Domain.Operator.Semantics` and consumes `OperatorCode`,
 `TransformationFamily`, `TransformationKind`, `operatorFamily`, and

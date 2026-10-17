@@ -33,9 +33,7 @@ role = "foundational-persistence-theory"
 # === Dependency Declarations ===
 
 [depends]
-required = [
-  { repository = "se-theory-transformation", kind = "semantic", version = "v0.5.1" },
-]
+required = []
 optional = []
 
 # === Provided Artifacts ===

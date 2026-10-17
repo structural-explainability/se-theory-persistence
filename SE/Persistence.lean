@@ -2,7 +2,6 @@ module -- shake: keep-all
 
 public import SE.Persistence.Core
 public import SE.Persistence.Registry
-public import SE.Persistence.Reference.Lift
 public import SE.Persistence.Conformance
 public import SE.Persistence.Spec
 

@@ -42,28 +42,8 @@ lean_kind = "theorem"
 source_module = "SE.Persistence.Domain.Classification"
 description = "The coarse matrix preserves exactly the preserving set."
 
-[theorem.LiftFamilyPatternEq]
-order = 4
-id = "LiftFamilyPatternEq"
-cite_id = "PS.THM.LIFT_FAMILY_PATTERN_EQ"
-name = "Lift family pattern eq"
-lean_symbol = "SE.Persistence.Classification.liftFamily_pattern_eq"
-lean_kind = "theorem"
-source_module = "SE.Persistence.Reference.Lift"
-description = "Operators in the same family have the same pattern under a lifted classification."
-
-[theorem.LiftKindPatternEq]
-order = 5
-id = "LiftKindPatternEq"
-cite_id = "PS.THM.LIFT_KIND_PATTERN_EQ"
-name = "Lift kind pattern eq"
-lean_symbol = "SE.Persistence.Classification.liftKind_pattern_eq"
-lean_kind = "theorem"
-source_module = "SE.Persistence.Reference.Lift"
-description = "Operators of the same kind have the same pattern under a lifted classification."
-
 [theorem.NotIdentityRelOfStepBrkFree]
-order = 6
+order = 4
 id = "NotIdentityRelOfStepBrkFree"
 cite_id = "PS.THM.NOT_IDENTITY_REL_OF_STEP_BRK_FREE"
 name = "Not identity rel of step brk free"
@@ -73,7 +53,7 @@ source_module = "SE.Persistence.Relation.Breakage"
 description = "On the free dynamics, a breaking step separates its endpoints."
 
 [theorem.IdentityRelEquivalence]
-order = 7
+order = 5
 id = "IdentityRelEquivalence"
 cite_id = "PS.THM.IDENTITY_REL_EQUIVALENCE"
 name = "Identity rel equivalence"
@@ -83,7 +63,7 @@ source_module = "SE.Persistence.Relation.Equivalence"
 description = "~_P is an equivalence relation."
 
 [theorem.SurvivesIdentityRel]
-order = 8
+order = 6
 id = "SurvivesIdentityRel"
 cite_id = "PS.THM.SURVIVES_IDENTITY_REL"
 name = "Survives identity rel"
@@ -93,7 +73,7 @@ source_module = "SE.Persistence.Relation.Equivalence"
 description = "Survival implies identity."
 
 [theorem.IdentityRelMono]
-order = 9
+order = 7
 id = "IdentityRelMono"
 cite_id = "PS.THM.IDENTITY_REL_MONO"
 name = "Identity rel mono"
@@ -103,7 +83,7 @@ source_module = "SE.Persistence.Relation.Equivalence"
 description = "A larger preserving set generates a larger identity relation."
 
 [theorem.IdentityRelEqOfPrsIff]
-order = 10
+order = 8
 id = "IdentityRelEqOfPrsIff"
 cite_id = "PS.THM.IDENTITY_REL_EQ_OF_PRS_IFF"
 name = "Identity rel eq of prs iff"
@@ -113,7 +93,7 @@ source_module = "SE.Persistence.Relation.Equivalence"
 description = "Equal preserving sets give equal identity relations on every dynamics."
 
 [theorem.IdentityRelEqOfCoarseEq]
-order = 11
+order = 9
 id = "IdentityRelEqOfCoarseEq"
 cite_id = "PS.THM.IDENTITY_REL_EQ_OF_COARSE_EQ"
 name = "Identity rel eq of coarse eq"
@@ -123,7 +103,7 @@ source_module = "SE.Persistence.Relation.Equivalence"
 description = "Classifications with the same coarse matrix have the same identity relation on every dynamics. Forgetting applicability does not change ~_P."
 
 [theorem.IdentityRelFreeIff]
-order = 12
+order = 10
 id = "IdentityRelFreeIff"
 cite_id = "PS.THM.IDENTITY_REL_FREE_IFF"
 name = "Identity rel free iff"
@@ -133,7 +113,7 @@ source_module = "SE.Persistence.Relation.Equivalence"
 description = "On the free dynamics, ~_P relates a transformation's private pair exactly when the transformation preserves."
 
 [theorem.InvariantIffRespectsIdentityRel]
-order = 13
+order = 11
 id = "InvariantIffRespectsIdentityRel"
 cite_id = "PS.THM.INVARIANT_IFF_RESPECTS_IDENTITY_REL"
 name = "Invariant iff respects identity rel"
@@ -143,7 +123,7 @@ source_module = "SE.Persistence.Relation.Invariance"
 description = "Invariance under preserving steps is respect for ~_P."
 
 [theorem.InvariantOfPrsSubset]
-order = 14
+order = 12
 id = "InvariantOfPrsSubset"
 cite_id = "PS.THM.INVARIANT_OF_PRS_SUBSET"
 name = "Invariant of prs subset"
@@ -153,7 +133,7 @@ source_module = "SE.Persistence.Relation.Invariance"
 description = "A classification that preserves fewer transformations has more invariants."
 
 [theorem.PrsDifferenceOfNonCollapsing]
-order = 15
+order = 13
 id = "PrsDifferenceOfNonCollapsing"
 cite_id = "PS.THM.PRS_DIFFERENCE_OF_NON_COLLAPSING"
 name = "Prs difference of non collapsing"
@@ -163,7 +143,7 @@ source_module = "SE.Persistence.Relation.NonCollapse"
 description = "Non-collapse on any dynamics forces a preserving-set difference."
 
 [theorem.NonCollapsingFreeIff]
-order = 16
+order = 14
 id = "NonCollapsingFreeIff"
 cite_id = "PS.THM.NON_COLLAPSING_FREE_IFF"
 name = "Non collapsing free iff"
@@ -173,7 +153,7 @@ source_module = "SE.Persistence.Relation.NonCollapse"
 description = "On the free dynamics, two classifications are non-collapsing exactly when their preserving sets differ."
 
 [theorem.SurvivesNeIdentityRelFree]
-order = 17
+order = 15
 id = "SurvivesNeIdentityRelFree"
 cite_id = "PS.THM.SURVIVES_NE_IDENTITY_REL_FREE"
 name = "Survives ne identity rel free"
@@ -183,7 +163,7 @@ source_module = "SE.Persistence.Relation.NonCollapse"
 description = "Survival is strictly weaker than the identity relation: for a preserving transformation, its private pair survives forward, does not survive backward, and is identity-related backward."
 
 [theorem.StepBrkNotSeparating]
-order = 18
+order = 16
 id = "StepBrkNotSeparating"
 cite_id = "PS.THM.STEP_BRK_NOT_SEPARATING"
 name = "Step brk not separating"
@@ -193,7 +173,7 @@ source_module = "SE.Persistence.Relation.NonCollapse"
 description = "Breakage does not separate in general: some classification and dynamics have a breaking step between states that are also identity-related."
 
 [theorem.SurvivesMono]
-order = 19
+order = 17
 id = "SurvivesMono"
 cite_id = "PS.THM.SURVIVES_MONO"
 name = "Survives mono"
@@ -203,7 +183,7 @@ source_module = "SE.Persistence.Relation.Survival"
 description = "Preserving more transformations survives more."
 
 [theorem.ObservationalequivalenceEquivalence]
-order = 20
+order = 18
 id = "ObservationalequivalenceEquivalence"
 cite_id = "PS.THM.OBSERVATIONAL_EQUIVALENCE_EQUIVALENCE"
 name = "observationalEquivalence_equivalence"
@@ -213,7 +193,7 @@ source_module = "SE.Persistence.Relation.Invariance"
 description = "Agreement on a family of observables is an equivalence relation."
 
 [theorem.StepsRespectObservablesIff]
-order = 21
+order = 19
 id = "StepsRespectObservablesIff"
 cite_id = "PS.THM.STEPS_RESPECT_OBSERVABLES_IFF"
 name = "steps_respect_observables_iff"
@@ -223,7 +203,7 @@ source_module = "SE.Persistence.Relation.Invariance"
 description = "Steps respect the observational kernel exactly when all observables are invariant."
 
 [theorem.RelationinvariantsGenerated]
-order = 22
+order = 20
 id = "RelationinvariantsGenerated"
 cite_id = "PS.THM.RELATION_INVARIANTS_GENERATED"
 name = "relationInvariants_generated"
@@ -233,7 +213,7 @@ source_module = "SE.Persistence.Relation.Invariance"
 description = "Taking equivalence closure does not change the invariant predicates."
 
 [theorem.GeneratedEqObservationalequivalence]
-order = 23
+order = 21
 id = "GeneratedEqObservationalequivalence"
 cite_id = "PS.THM.GENERATED_EQ_OBSERVATIONAL_EQUIVALENCE"
 name = "generated_eq_observationalEquivalence"
@@ -243,7 +223,7 @@ source_module = "SE.Persistence.Relation.Invariance"
 description = "Generated identity is exactly agreement on all step invariants."
 
 [theorem.ObservablesInvariantIffGeneratedRespects]
-order = 24
+order = 22
 id = "ObservablesInvariantIffGeneratedRespects"
 cite_id = "PS.THM.OBSERVABLES_INVARIANT_IFF_GENERATED_RESPECTS"
 name = "observables_invariant_iff_generated_respects"
@@ -253,7 +233,7 @@ source_module = "SE.Persistence.Relation.Invariance"
 description = "Preservation: all observables are invariant iff generated identity respects them."
 
 [theorem.ObservationalCompletenessIffInvariantSaturation]
-order = 25
+order = 23
 id = "ObservationalCompletenessIffInvariantSaturation"
 cite_id = "PS.THM.OBSERVATIONAL_COMPLETENESS_IFF_INVARIANT_SATURATION"
 name = "observational_completeness_iff_invariant_saturation"
@@ -263,7 +243,7 @@ source_module = "SE.Persistence.Relation.Invariance"
 description = "Completeness means every step invariant is constant on observational classes."
 
 [theorem.ClassificationIdentityrelIffAllInvariantsAgree]
-order = 26
+order = 24
 id = "ClassificationIdentityrelIffAllInvariantsAgree"
 cite_id = "PS.THM.IDENTITY_REL_IFF_ALL_INVARIANTS_AGREE"
 name = "Classification.identityRel_iff_all_invariants_agree"
@@ -273,7 +253,7 @@ source_module = "SE.Persistence.Relation.Invariance"
 description = "Identity holds exactly when every persistence invariant agrees at the two states."
 
 [theorem.ObservationalequivalencePresentableIff]
-order = 27
+order = 25
 id = "ObservationalequivalencePresentableIff"
 cite_id = "PS.THM.OBSERVATIONAL_EQUIVALENCE_PRESENTABLE_IFF"
 name = "observationalEquivalence_presentable_iff"
@@ -283,7 +263,7 @@ source_module = "SE.Persistence.Relation.Observability"
 description = "Observational equivalence over the presentable predicates is equality of presentations."
 
 [theorem.PresentationSoundIff]
-order = 28
+order = 26
 id = "PresentationSoundIff"
 cite_id = "PS.THM.PRESENTATION_SOUND_IFF"
 name = "presentationSound_iff"
@@ -293,7 +273,7 @@ source_module = "SE.Persistence.Relation.Observability"
 description = "Soundness means every presentable predicate is a step invariant."
 
 [theorem.PresentationCompleteIff]
-order = 29
+order = 27
 id = "PresentationCompleteIff"
 cite_id = "PS.THM.PRESENTATION_COMPLETE_IFF"
 name = "presentationComplete_iff"
@@ -303,7 +283,7 @@ source_module = "SE.Persistence.Relation.Observability"
 description = "Completeness means every step invariant is constant on presentation classes."
 
 [theorem.PresentationCompleteIffInvariantsDetermined]
-order = 30
+order = 28
 id = "PresentationCompleteIffInvariantsDetermined"
 cite_id = "PS.THM.PRESENTATION_COMPLETE_IFF_INVARIANTS_DETERMINED"
 name = "presentationComplete_iff_invariants_determined"
@@ -313,7 +293,7 @@ source_module = "SE.Persistence.Relation.Observability"
 description = "Completeness means every identity invariant is determined by the presentation."
 
 [theorem.NotIdentityRelOfSoundOfNe]
-order = 31
+order = 29
 id = "NotIdentityRelOfSoundOfNe"
 cite_id = "PS.THM.NOT_IDENTITY_REL_OF_SOUND_OF_NE"
 name = "not_identityRel_of_sound_of_ne"
@@ -323,7 +303,7 @@ source_module = "SE.Persistence.Relation.Observability"
 description = "A sound presentation that distinguishes two states certifies that they are not identity-related."
 
 [theorem.IdentityRelOfCompleteOfEq]
-order = 32
+order = 30
 id = "IdentityRelOfCompleteOfEq"
 cite_id = "PS.THM.IDENTITY_REL_OF_COMPLETE_OF_EQ"
 name = "identityRel_of_complete_of_eq"
@@ -333,7 +313,7 @@ source_module = "SE.Persistence.Relation.Observability"
 description = "A complete presentation that does not distinguish two states certifies that they are identity-related."
 
 [theorem.NotPresentationCompleteIffBlind]
-order = 33
+order = 31
 id = "NotPresentationCompleteIffBlind"
 cite_id = "PS.THM.NOT_COMPLETE_IFF_BLIND"
 name = "not_presentationComplete_iff_blind"
@@ -343,7 +323,7 @@ source_module = "SE.Persistence.Relation.Observability"
 description = "A presentation is not complete exactly when it fails to separate some states that are not identity-related."
 
 [theorem.PresentationSoundOfFactor]
-order = 34
+order = 32
 id = "PresentationSoundOfFactor"
 cite_id = "PS.THM.PRESENTATION_SOUND_OF_FACTOR"
 name = "presentationSound_of_factor"
@@ -353,7 +333,7 @@ source_module = "SE.Persistence.Relation.Observability"
 description = "A coarser presentation of a sound presentation is sound."
 
 [theorem.PresentationCompleteOfFactor]
-order = 35
+order = 33
 id = "PresentationCompleteOfFactor"
 cite_id = "PS.THM.PRESENTATION_COMPLETE_OF_FACTOR"
 name = "presentationComplete_of_factor"
@@ -363,7 +343,7 @@ source_module = "SE.Persistence.Relation.Observability"
 description = "If a coarser presentation is complete, so is the finer one."
 
 [theorem.PresentationBlindExample]
-order = 36
+order = 34
 id = "PresentationBlindExample"
 cite_id = "PS.THM.PRESENTATION_BLIND_EXAMPLE"
 name = "presentation_blind_example"

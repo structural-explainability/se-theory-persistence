@@ -4,7 +4,6 @@ import SETest.Persistence.Basic
 import SETest.Persistence.Breakage
 import SETest.Persistence.Equivalence
 import SETest.Persistence.Invariance
-import SETest.Persistence.Lift
 import SETest.Persistence.NonCollapse
 import SETest.Persistence.Survival
 

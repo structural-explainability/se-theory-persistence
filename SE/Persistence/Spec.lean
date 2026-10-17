@@ -62,14 +62,6 @@ def PS_DEF_WELL_FORMED : String :=
 def PS_DEF_COARSE : String :=
   "PS.DEF.COARSE"
 
-/-- Stable citation identifier for `Classification.liftFamily`. -/
-def PS_DEF_LIFT_FAMILY : String :=
-  "PS.DEF.LIFT_FAMILY"
-
-/-- Stable citation identifier for `Classification.liftKind`. -/
-def PS_DEF_LIFT_KIND : String :=
-  "PS.DEF.LIFT_KIND"
-
 /-- Stable citation identifier for `referenceClassificationValues`. -/
 def PS_DEF_REFERENCE_CLASSIFICATION_VALUES : String :=
   "PS.DEF.REFERENCE_CLASSIFICATION_VALUES"
@@ -117,14 +109,6 @@ def PS_THM_NOT_IS_PRS_OF_IS_BRK : String :=
 /-- Stable citation identifier for `Classification.coarse_eq_prs_iff`. -/
 def PS_THM_COARSE_EQ_PRS_IFF : String :=
   "PS.THM.COARSE_EQ_PRS_IFF"
-
-/-- Stable citation identifier for `Classification.liftFamily_pattern_eq`. -/
-def PS_THM_LIFT_FAMILY_PATTERN_EQ : String :=
-  "PS.THM.LIFT_FAMILY_PATTERN_EQ"
-
-/-- Stable citation identifier for `Classification.liftKind_pattern_eq`. -/
-def PS_THM_LIFT_KIND_PATTERN_EQ : String :=
-  "PS.THM.LIFT_KIND_PATTERN_EQ"
 
 /-- Stable citation identifier for `Classification.not_identityRel_of_stepBrk_free`. -/
 def PS_THM_NOT_IDENTITY_REL_OF_STEP_BRK_FREE : String :=

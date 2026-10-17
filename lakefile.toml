@@ -14,7 +14,7 @@
 # ============================================================
 
 name = "se-theory-persistence"
-version = "0.3.0"
+version = "0.4.0"
 license = "MIT"
 
 
@@ -26,11 +26,6 @@ license = "MIT"
 defaultTargets = ["SE.Persistence"]
 testDriver = "SETest"
 lintDriver = "SELint"
-
-[[require]]
-name = "se-theory-transformation"
-git = "https://github.com/structural-explainability/se-theory-transformation"
-rev = "v0.5.1"
 
 # ============================================================
 # LEAN OPTIONS

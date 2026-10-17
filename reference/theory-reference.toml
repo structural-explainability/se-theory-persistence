@@ -1,7 +1,7 @@
 # ============================================================
 # reference/theory-reference.toml
 # ============================================================
-# Theory reference configuration for se-theory-reference-kit.
+# Theory reference configuration.
 #
 # The theory repository owns Lean source, reference TOML, and
 # generated JSON artifacts. The reusable reference kit owns the
@@ -31,7 +31,6 @@ public_modules = [
     "SE.Persistence.Core",
     "SE.Persistence.Domain.Classification",
     "SE.Persistence.Domain.ClassificationValue",
-    "SE.Persistence.Reference.Lift",
     "SE.Persistence.Registry",
     "SE.Persistence.Relation.Breakage",
     "SE.Persistence.Relation.Equivalence",

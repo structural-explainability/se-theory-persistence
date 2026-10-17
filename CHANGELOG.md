@@ -19,6 +19,28 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ---
 
+## [0.4.0] - 2026-10-16
+
+### Changed
+
+- Persistence no longer depends on the Transformation theory; it now depends
+  only on Mathlib
+- Removed the Transformation requirement from `lakefile.toml`, `lake-manifest.json`
+  and `SE_MANIFEST.toml`
+
+### Removed
+
+- SE.Persistence.Reference.Lift (moved to the new
+  se-theory-transformation-persistence package, module family
+  SE.TransformationPersistence, with its declarations unchanged in the
+  SE.Persistence namespace)
+- The lift conformance guards `liftFamily_coarse_all` and `liftKind_coarse_all`
+  from SE.Persistence.Conformance, and the lift checks in SETest
+- The reference entries and citation constants for `liftFamily`, `liftKind`,
+  `liftFamily_pattern_eq` and `liftKind_pattern_eq`
+
+---
+
 ## [0.3.0] - 2026-10-16
 
 ### Added
@@ -199,7 +221,7 @@ git push origin vX.Y.Z
 Create GitHub Release after pushing tag, for example with a command like this:
 
 ```shell
-gh release create v0.2.0 --verify-tag --title "0.2.0"  --generate-notes
+gh release create v0.4.0 --verify-tag --title "0.4.0"  --generate-notes
 ```
 
 ## Only As Needed (delete a tag)
@@ -211,7 +233,8 @@ git push origin :refs/tags/vX.Z.Y
 
 ## Links
 
-[Unreleased]: https://github.com/structural-explainability/se-theory-persistence/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/structural-explainability/se-theory-persistence/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.4.0
 [0.3.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.3.0
 [0.2.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.2.0
 [0.1.1]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.1.1
