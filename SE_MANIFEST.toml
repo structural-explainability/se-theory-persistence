@@ -42,35 +42,38 @@ optional = []
 # Logical artifacts exposed by this repository.
 # These are stable identifiers, not file paths.
 artifacts = [
-  "lean-library",
-  "persistence-vocabulary",
-  "persistence-relation-definitions",
-  "persistence-invariant-definitions",
-  "persistence-equivalence-definitions",
-  "persistence-breakage-definitions",
+    "lean-library",
+    "persistence-vocabulary",
+    "persistence-relation-definitions",
+    "persistence-invariant-definitions",
+    "persistence-equivalence-definitions",
+    "persistence-breakage-definitions",
 ]
 
 # === Scope ===
 
 [scope]
 includes = [
-  "foundational persistence vocabulary",
-  "identity survival relations",
-  "identity breakage relations",
-  "persistence invariants",
-  "persistence equivalence",
-  "Lean formalization of persistence theory",
+    "foundational persistence vocabulary",
+    "identity survival relations",
+    "identity breakage relations",
+    "identity-commitment calculus over asserted-same and asserted-distinct pairs",
+    "identity-commitment consistency and required, forbidden, and undetermined judgments",
+    "identity-commitment comparison, branching, cardinality, and observational consequences",
+    "persistence invariants",
+    "persistence equivalence",
+    "Lean formalization of persistence theory",
 ]
 
 excludes = [
-  "foundational transformation operators",
-  "transformation family definitions",
-  "transformation kind definitions",
-  "neutral substrate primitive definitions",
-  "mapping semantics",
-  "operational validation logic",
-  "domain-specific interpretation",
-  "runtime systems",
+    "foundational transformation operators",
+    "transformation family definitions",
+    "transformation kind definitions",
+    "neutral substrate primitive definitions",
+    "mapping semantics",
+    "operational validation logic",
+    "domain-specific interpretation",
+    "runtime systems",
 ]
 
 # === Validation ===
