@@ -17,6 +17,11 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 - Carrier-sensitive comparison of identity relations across distinct carriers and dynamics
 - Further investigation of contextual and history-dependent continuation licensing
 
+### Updated
+
+- minor documentation updates
+-
+
 ---
 
 ## [0.5.0] - 2026-10-17
@@ -179,6 +184,7 @@ uvx gha-tools autoupdate --pin=all --write .github/workflows
 # NO .github\workflows\deploy-zensical.yml
 # YES  .github\workflows\deploy-zensical-lean.yml
 uvx zizmor@latest .github/
+# Some suppressed is still okay
 
 # Validate.
 uvx cffconvert --validate

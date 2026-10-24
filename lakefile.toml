@@ -10,7 +10,7 @@
 # lake lint
 
 # ============================================================
-# PROJECT IDENTITY
+# === PROJECT IDENTITY ===
 # ============================================================
 
 name = "se-theory-persistence"
@@ -19,7 +19,7 @@ license = "MIT"
 
 
 # ============================================================
-# BUILD SURFACE
+# === BUILD SURFACE ===
 # ============================================================
 # defaultTargets must include the public Lean library root.
 
@@ -28,7 +28,18 @@ testDriver = "SETest"
 lintDriver = "SELint"
 
 # ============================================================
-# LEAN OPTIONS
+# === DEPENDENCIES ===
+# ============================================================
+
+[[require]]
+# Mathlib provides standard infrastructure used by this library.
+# Mathlib release must match the Lean version in lean-toolchain.
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.34.0"
+
+# ============================================================
+# === LEAN OPTIONS ===
 # ============================================================
 
 [leanOptions]
@@ -47,18 +58,7 @@ weak.linter.allScriptsDocumented = false
 weak.linter.unicodeLinter = false
 
 # ============================================================
-# DEPENDENCIES
-# ============================================================
-# Mathlib provides standard infrastructure used by this library.
-# Mathlib release must match the Lean version in lean-toolchain.
-
-[[require]]
-name = "mathlib"
-scope = "leanprover-community"
-rev = "v4.34.0"
-
-# ============================================================
-# PUBLIC LIBRARY
+# === PUBLIC LIBRARY ===
 # ============================================================
 # The library downstream packages import. It must claim only the module
 # family owned by this package. Other packages own other SE.* families.
@@ -83,7 +83,7 @@ globs = ["SE.Persistence.*"]
 
 
 # ============================================================
-# TEST LIBRARY
+# === TEST LIBRARY ===
 # ============================================================
 # Internal verification; not part of downstream public import surface.
 
@@ -95,7 +95,7 @@ leanOptions = { weak.linter.style.header = false }
 
 
 # ============================================================
-# LINT DRIVER
+# === LINT DRIVER ===
 # ============================================================
 
 [[lean_exe]]

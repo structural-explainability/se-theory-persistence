@@ -25,7 +25,7 @@ description = "Persistence theory repository for Structural Explainability."
 root_module = "SE"
 
 public_modules = [
-    "SE.",
+    "SE",
     "SE.Persistence",
     # Get the following with:
     # Get-ChildItem .\SE\Persistence -Recurse -Filter *.lean |
