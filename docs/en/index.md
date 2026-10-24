@@ -32,6 +32,19 @@ These relations are formal constructions.
 Their scientific interpretation depends on justified classifications,
 dynamics, and referent-specific identity criteria supplied downstream.
 
+## Identity Commitments
+
+Persistence also defines a generic identity-commitment calculus over
+asserted-same and asserted-distinct pairs.
+
+The calculus establishes consistency conditions, required, forbidden,
+and undetermined identity judgments, and consequences for comparison,
+branching, cardinality, and observation.
+
+These results constrain the supplied commitments.
+They do not independently establish whether those commitments are
+scientifically warranted for an intended referent kind.
+
 ## Dependencies
 
 This repository is a foundational theory-layer repository
