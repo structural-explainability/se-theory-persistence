@@ -13,27 +13,10 @@
 > Lean 4 formalization of foundational persistence theory
 > for Structural Explainability (SE).
 
-Persistence asks when something should still count as the same identity
-after it has been transformed.
+This repository formalizes persistence relations and identity-commitment reasoning.
 
-This repository defines the formal vocabulary and relations needed to reason
-about identity survival, breakage, invariance, and equivalence
-under transformation.
-
-Persistence also owns the identity-commitment calculus over asserted-same
-and asserted-distinct pairs.
-This calculus establishes consistency, required, forbidden, and
-undetermined identity judgments, comparison, branching and
-cardinality consequences, and observational constraints.
-
-It is distinct from Neutral Substrate's general commitment-theory
-infrastructure for object-language propositions.
-
-It does not own transformation theory itself, identity regimes, domain-specific
-survival criteria, accountable entities, evolution protocols, or operational
-policy.
-
-For the full documentation, see [`docs/en/index.md`](./docs/en/index.md).
+For the full theory description, results, and limitations,
+see [`docs/en/index.md`](./docs/en/index.md).
 
 ## Authority
 
