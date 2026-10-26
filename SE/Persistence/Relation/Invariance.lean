@@ -1,6 +1,11 @@
+/-
+Copyright (c) 2026 Denise M. Case. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Denise M. Case
+-/
 module
 
-public import Mathlib.Data.Set.Defs
+public import MathlibMini.Set
 public import SE.Persistence.Relation.Equivalence
 
 set_option autoImplicit false
@@ -28,6 +33,8 @@ theory, which concerns consistency across admissible frameworks.
 
 namespace SE.Persistence
 
+open MathlibMini
+
 @[expose] public section
 
 variable {T C : Type}
@@ -35,7 +42,7 @@ variable {T C : Type}
 -- RR.DEFINES: PS.DEF.RELATION_INVARIANTS
 /-- All predicates constant along the steps of a relation. -/
 def relationInvariants (r : C → C → Prop) : Set (C → Prop) :=
-  {φ | ∀ x y, r x y → (φ x ↔ φ y)}
+  Set.ofPredicate (fun φ => ∀ x y, r x y → (φ x ↔ φ y))
 
 -- RR.DEFINES: PS.DEF.OBSERVATIONAL_EQUIVALENCE
 /-- Agreement on every observable in a family; no basis semantics is assumed. -/

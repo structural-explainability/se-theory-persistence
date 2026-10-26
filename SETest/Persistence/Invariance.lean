@@ -1,6 +1,11 @@
+/-
+Copyright (c) 2026 Denise M. Case. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Denise M. Case
+-/
 module
 
-public import Mathlib.Data.Set.Insert
+public import MathlibMini.Set
 public import SETest.Persistence.Survival
 public import SE.Persistence.Relation.Invariance
 
@@ -50,16 +55,16 @@ example (φ : Bool → Prop) :
     observationalEquivalence {φ} =
       observationalEquivalence {fun x => ¬ φ x} := by
   funext x y
-  simp only [observationalEquivalence, Set.mem_singleton_iff, forall_eq]
-  exact propext ⟨not_congr, fun h => by simpa only [not_not] using not_congr h⟩
+  simp only [observationalEquivalence, MathlibMini.Set.mem_singleton_iff, forall_eq]
+  exact propext ⟨not_congr, fun h => by simpa using not_congr h⟩
 
 -- Empty observables preserve every step but are not complete for empty dynamics.
 example :
-    (∅ : Set (Bool → Prop)) ⊆ relationInvariants (fun _ _ : Bool => False) ∧
-      ¬ (∀ x y, observationalEquivalence (∅ : Set (Bool → Prop)) x y →
+    (∅ : MathlibMini.Set (Bool → Prop)) ⊆ relationInvariants (fun _ _ : Bool => False) ∧
+      ¬ (∀ x y, observationalEquivalence (∅ : MathlibMini.Set (Bool → Prop)) x y →
         Generated (fun _ _ : Bool => False) x y) := by
   constructor
-  · exact Set.empty_subset _
+  · exact MathlibMini.Set.empty_subset _
   · intro h
     have hg := h false true (fun _ hφ => False.elim hφ)
     have heq : false = true :=

@@ -17,11 +17,19 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 - Carrier-sensitive comparison of identity relations across distinct carriers and dynamics
 - Further investigation of contextual and history-dependent continuation licensing
 
+---
+
+## [0.6.0] - 2026-10-26
+
 ### Updated
 
+- moved out lint/
+- replaced Mathlib with MathlibMini
 - minor documentation updates
 - partial uvx pup-up of supporting files
 - clarifications
+- Updated license notice.
+- Added headers to Lean files.
 
 ---
 
@@ -194,33 +202,6 @@ uvx se-manifest-schema validate-manifest --strict
 # Format Markdown.
 npx markdownlint-cli2 --fix
 
-# update lean
-elan self update
-lake update
-
-# build Lean (source of truth)
-# lake clean
-lake build
-lake test
-lake lint
-
-# check docs (may not work on windows/runs via gh action)
-# cd docbuild
-# lake build SE.Persistence:docs
-# cd ..
-
-# Generate JSON artifacts and catalog from reference TOML.
-uvx se-theory-reference-kit@latest inspect
-uvx se-theory-reference-kit@latest export
-uvx se-theory-reference-kit@latest catalog
-
-# Validate the reference artifacts against the Lean public surface.
-uvx se-theory-reference-kit@latest validate --strict
-
-# Verify generated artifacts are current without rewriting them.
-uvx se-theory-reference-kit@latest export --check
-uvx se-theory-reference-kit@latest catalog --check
-
 .\rel.ps1
 .\sit.ps1
 ```
@@ -249,7 +230,7 @@ git push origin vX.Y.Z
 Create GitHub Release after pushing tag, for example with a command like this:
 
 ```shell
-gh release create v0.5.0 --verify-tag --title "0.5.0"  --generate-notes
+gh release create v0.6.0 --verify-tag --title "0.6.0"  --generate-notes
 ```
 
 ## Only As Needed (delete a tag)
@@ -261,7 +242,8 @@ git push origin :refs/tags/vX.Z.Y
 
 ## Links
 
-[Unreleased]: https://github.com/structural-explainability/se-theory-persistence/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/structural-explainability/se-theory-persistence/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.6.0
 [0.5.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.5.0
 [0.4.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.4.0
 [0.3.0]: https://github.com/structural-explainability/se-theory-persistence/releases/tag/v0.3.0

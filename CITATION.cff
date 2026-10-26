@@ -12,8 +12,8 @@ message: "If you use this work, please cite it using the metadata in CITATION.cf
 type: software
 
 title: "SE Theory: Persistence"
-version: "0.5.0"
-date-released: "2026-10-17"
+version: "0.6.0"
+date-released: "2026-10-26"
 
 authors:
   - family-names: Case
@@ -24,7 +24,7 @@ authors:
 repository-code: "https://github.com/structural-explainability/se-theory-persistence"
 url: "https://github.com/structural-explainability/se-theory-persistence"
 
-license: MIT
+license: Apache-2.0
 
 abstract: >
   Lean 4 formalization of foundational persistence theory for
