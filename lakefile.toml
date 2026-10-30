@@ -13,7 +13,7 @@
 # ============================================================
 
 name = "se-theory-persistence"
-version = "0.6.0"
+version = "0.6.1" # CUSTOM: Sets the current release version
 license = "Apache-2.0"
 
 # ============================================================
