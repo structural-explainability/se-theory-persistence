@@ -15,7 +15,6 @@ predicates, assumptions, theorems, and proof obligations.
 - [Research Doubts and Open Questions](https://github.com/structural-explainability/se-theory-persistence/blob/main/DOUBTS.md)
 - [Research Decisions](https://github.com/structural-explainability/se-theory-persistence/blob/main/DECISIONS.md)
 
-
 ## Persistence
 
 Persistence investigates the conditions under which
