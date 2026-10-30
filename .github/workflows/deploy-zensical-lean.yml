@@ -1,7 +1,7 @@
 # ============================================================
 # .github/workflows/deploy-zensical-lean.yml (CUSTOM LEAN+ALL-PY-REPOS)
 # ============================================================
-# Updated: 2026-10-03 CUSTOM
+# Updated: 2026-10-30
 #
 # WHY: Build and deploy documentation to GitHub Pages on pushes to main.
 # REQ: Repo Settings -> Pages -> Build and deployment -> Source:
@@ -33,7 +33,7 @@ concurrency:
 env:
   PYTHONUNBUFFERED: "1" # WHY: Real-time log output in CI.
   PYTHONIOENCODING: "utf-8" # WHY: Consistent encoding across platforms.
-  UV_FROZEN: "1"            # WHY: Deployment MUST use uv.lock without updating it.
+  UV_FROZEN: "1" # WHY: Deployment MUST use uv.lock without updating it.
 
 jobs:
   docs:
@@ -64,6 +64,11 @@ jobs:
           cache-dependency-glob: "uv.lock"
           # WHY: Invalidate dependency cache when the committed lockfile changes.
 
+      - name: A4) Install project Python
+        run: uv python install
+        # WHY: Ensures the Python version declared in .python-version is available.
+        # OBS: uv manages the interpreter locally in the CI environment.
+
       - name: A5) Install dependencies from committed lockfile
         run: uv sync --frozen
         # WHY: Install all configured dependency groups exactly from uv.lock.
@@ -79,7 +84,7 @@ jobs:
         # WHY: Version output makes deployment logs easier to debug when tools change.
 
       # ============================================================
-      # AA) ASSEMBLE: Checkout code and set up environment
+      # AA) ASSEMBLE LEAN ENVIRONMENT
       # ============================================================
 
       - name: AA1) Set up Lean
@@ -88,11 +93,21 @@ jobs:
           build: false
           test: false
           lint: false
+        # WHY: Install the repository's declared Lean toolchain for API docs.
+        # OBS: Build, test, and lint are handled by the Lean CI workflow.
 
       - name: AA2) Install native build tools
         run: |
           sudo apt-get update
           sudo apt-get install --yes build-essential
+        # WHY: Lean API documentation generation requires native build tooling
+        # on the Linux GitHub Actions runner.
+
+      - name: AA3) Show lean tool versions
+        run: |
+          lean --version
+          lake --version
+          # WHY: Version output makes Lean documentation failures easier to diagnose.
 
       # ============================================================
       # B) BUILD ZENSICAL SITE
@@ -125,7 +140,7 @@ jobs:
       # BB) BUILD LEAN API DOCUMENTATION (CUSTOM)
       # ============================================================
 
-      - name: BB1) Prepare Lean API documentation build
+      - name: BB1) CUSTOM Prepare Lean API documentation build
         run: |
           LEAN_TOOLCHAIN="$(tr -d '\r\n' < lean-toolchain)"
           LEAN_TAG="${LEAN_TOOLCHAIN##*:}"
@@ -136,7 +151,6 @@ jobs:
           cat > docbuild/lakefile.toml <<EOF
           name = "docbuild"
           reservoir = false
-          version = "0.1.0"
           packagesDir = "../.lake/packages"
 
           [[require]]
@@ -152,33 +166,16 @@ jobs:
           echo "Lean toolchain: ${LEAN_TOOLCHAIN}"
           echo "doc-gen4 revision: ${LEAN_TAG}"
 
-      - name: BB2) Build Lean API documentation for this module
+      - name: BB2) CUSTOM Build Lean API documentation for this module
         working-directory: docbuild
         run: |
           MATHLIB_NO_CACHE_ON_UPDATE=1 lake update doc-gen4
           lake update se-theory-persistence
 
-          # Build first so the .olean files exist.
+          # Build the library first so its .olean files exist.
           lake build SE.Persistence
 
-          # Lean resolves an import by the first search-path entry that has a
-          # directory named after the module's first component. Persistence and
-          # Transformation both live under SE/, so expose each package's SE
-          # tree inside the other's lib dir before doc-gen4 runs.
-          PERS_LIB="$GITHUB_WORKSPACE/.lake/build/lib/lean"
-          TRANS_LIB="$GITHUB_WORKSPACE/.lake/packages/se-theory-transformation/.lake/build/lib/lean"
-          merge_se() {
-            src="$1"; dst="$2"
-            mkdir -p "$dst/SE"
-            for f in "$src"/SE/* "$src"/SE.*; do
-              [ -e "$f" ] || continue
-              rel="${f#"$src"/}"
-              [ -e "$dst/$rel" ] || [ -L "$dst/$rel" ] || ln -s "$f" "$dst/$rel"
-            done
-          }
-          merge_se "$PERS_LIB" "$TRANS_LIB"
-          merge_se "$TRANS_LIB" "$PERS_LIB"
-
+          # Build first so the .olean files exist.
           lake build SE.Persistence:docs
 
       - name: BB3) Verify Lean API output
@@ -195,6 +192,7 @@ jobs:
           rm -rf site/lean
           mkdir -p site/lean
           cp -R docbuild/.lake/build/doc/. site/lean/
+        # WHY: Publish generated Lean API documentation under /lean/.
 
       - name: BB5) Verify combined documentation site
         run: |
@@ -206,6 +204,7 @@ jobs:
             >> "$GITHUB_STEP_SUMMARY"
           echo "- Lean API reference: site/lean/index.html" \
             >> "$GITHUB_STEP_SUMMARY"
+        # WHY: Confirm both documentation surfaces exist before deployment.
 
       # ============================================================
       # D) DEPLOY
